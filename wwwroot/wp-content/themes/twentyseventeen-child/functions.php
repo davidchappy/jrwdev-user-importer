@@ -39,3 +39,6 @@ function twentyseventeen_child_javascripts() {
 }
 add_action('wp_enqueue_scripts', 'twentyseventeen_child_javascripts');
 ?>
+
+
+
