@@ -85,7 +85,7 @@ class WC_CSV_Import_Suite_Parser {
 	 * @return array Array containing parsed_data, raw_headers, last parsed
 	 *               position and last parsed line number
 	 */
-	public static function parse( $file, $options = array() ) {
+	public static function parse( $file, $options = array() ) { 
 
 		$defaults = array(
 			'delimiter'  => ',',
@@ -195,7 +195,7 @@ class WC_CSV_Import_Suite_Parser {
 
 			fclose( $handle );
 		}
-
+		
 		return array( $parsed_data, $raw_headers, $position, $line_num );
 	}
 

@@ -229,7 +229,7 @@ class WC_CSV_Import_Suite_Customer_Import extends WC_CSV_Import_Suite_Importer {
 	 * @throws \WC_CSV_Import_Suite_Import_Exception validation, parsing errors
 	 * @return array|bool Parsed customer data or false on failure
 	 */
-	protected function parse_item( $item, $options = array(), $raw_headers = array() ) {
+	protected function parse_item( $item, $options = array(), $raw_headers = array() ) { 
 
 		$customer_id = ! empty( $item['id'] ) ? $item['id'] : 0;
 		$username    = isset( $item['username'] ) && $item['username'] ? sanitize_user( $item['username'] ) : null;
@@ -609,6 +609,13 @@ class WC_CSV_Import_Suite_Customer_Import extends WC_CSV_Import_Suite_Importer {
 			 * @param array $options
 			 * @param object $this
 			 */
+			
+      // write_log('user $data create_customer');
+      // write_log($data);  
+
+      // write_log('user $options create_customer');
+      // write_log($options);   
+       
 			$data = apply_filters( 'wc_csv_import_suite_create_customer_data', $data, $options, $this );
 
 			// checks if the email is missing.

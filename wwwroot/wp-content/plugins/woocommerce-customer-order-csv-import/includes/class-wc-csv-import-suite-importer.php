@@ -172,6 +172,7 @@ class WC_CSV_Import_Suite_Importer extends WP_Importer {
 						 * @param string $file Path to CSV file
 						 * @param string $type Import type
 						 */
+
 						$options = apply_filters( 'wc_csv_import_suite_import_options', (array) $_REQUEST['options'], $file, $type );
 
 						// Setting default options will ensure that these options are set
@@ -548,6 +549,10 @@ class WC_CSV_Import_Suite_Importer extends WP_Importer {
 		 * @param array $columns Associative array as 'column' => 'default mapping'
 		 */
 		$mapping_options = apply_filters( 'wc_csv_import_suite_column_mapping_options', $this->get_column_mapping_options(), $importer, $headers, $raw_headers, $columns );
+
+    // write_log('THIS IS $mapping_options FROM importer; this is what I am producing');
+    // write_log($mapping_options);
+
 		$mapping_options['import_as_meta']     = __( 'Custom Field with column name', 'woocommerce-csv-import-suite' );
 		$mapping_options['import_as_taxonomy'] = __( 'Taxonomy with column name', 'woocommerce-csv-import-suite' );
 
@@ -891,6 +896,9 @@ class WC_CSV_Import_Suite_Importer extends WP_Importer {
 
 		// read raw data from CSV file
 		list( $parsed_data, $raw_headers, $position, $last_line_num ) = WC_CSV_Import_Suite_Parser::parse( $file, $options );
+
+		// write_log('THIS IS $parsed_data FROM import');
+  //   write_log($parsed_data);
 
 		$this->import_progress = array(
 			'line' => $last_line_num,
