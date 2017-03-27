@@ -5969,3 +5969,1709 @@
 
 )
 
+[27-Mar-2017 15:11:38 UTC] user data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:11:38 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 23
+            [user_login] => acustomer
+            [user_pass] => $P$BLKvoZSqeiRiENxrdLlV86jL9wWKLz0
+            [user_nicename] => acustomer
+            [user_email] => acustomer@example.com
+            [user_url] => 
+            [user_registered] => 2017-03-25 19:14:08
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => asdf asdf
+        )
+
+    [ID] => 23
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:11:38 UTC] user meta data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:11:38 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => acustomer
+        )
+
+    [first_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [last_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[27-Mar-2017 15:11:38 UTC] user data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:11:38 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 47
+            [user_login] => brianbohl
+            [user_pass] => $P$BDe9rX9b8pQRilKwXIycOUUK5hR8uk0
+            [user_nicename] => brianbohl
+            [user_email] => imzsht7181@aol.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => brianbohl
+        )
+
+    [ID] => 47
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:11:38 UTC] user meta data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:11:38 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => brianbohl
+        )
+
+    [first_name] => Array
+        (
+            [0] => Brian
+        )
+
+    [last_name] => Array
+        (
+            [0] => Bohl
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 2
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:11:38 UTC] user data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:11:38 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 49
+            [user_login] => devondusseault
+            [user_pass] => $P$Bo8GXzFjEiZ9/9T5iQlOpeci/upVZX0
+            [user_nicename] => devondusseault
+            [user_email] => Dev5095@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:18
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => devondusseault
+        )
+
+    [ID] => 49
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:11:38 UTC] user meta data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:11:38 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => devondusseault
+        )
+
+    [first_name] => Array
+        (
+            [0] => Devon
+        )
+
+    [last_name] => Array
+        (
+            [0] => Dusseault
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => true
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:11:38 UTC] user data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:11:38 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 46
+            [user_login] => jameswillette
+            [user_pass] => $P$Bu2Y1Izq6vch/f9qKjlp1nGzRjTelD.
+            [user_nicename] => jameswillette
+            [user_email] => ddarko.willette@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => jameswillette
+        )
+
+    [ID] => 46
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:11:38 UTC] user meta data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:11:38 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => jameswillette
+        )
+
+    [first_name] => Array
+        (
+            [0] => James
+        )
+
+    [last_name] => Array
+        (
+            [0] => Willette
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:11:38 UTC] user data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:11:38 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 48
+            [user_login] => johnaverick
+            [user_pass] => $P$Brg2YjwoojwkKIw8oML5nrT6BSXA9z/
+            [user_nicename] => johnaverick
+            [user_email] => Patriotrights@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => johnaverick
+        )
+
+    [ID] => 48
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:11:38 UTC] user meta data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:11:38 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => johnaverick
+        )
+
+    [first_name] => Array
+        (
+            [0] => John
+        )
+
+    [last_name] => Array
+        (
+            [0] => Averick
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:11:38 UTC] user data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:11:38 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 45
+            [user_login] => kaylalamb
+            [user_pass] => $P$BfJ9eHBXz6hcoP88gb7CMDKXxFoW4e.
+            [user_nicename] => kaylalamb
+            [user_email] => kaylaglamlamb@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => kaylalamb
+        )
+
+    [ID] => 45
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:11:38 UTC] user meta data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:11:38 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => kaylalamb
+        )
+
+    [first_name] => Array
+        (
+            [0] => Kayla
+        )
+
+    [last_name] => Array
+        (
+            [0] => Lamb
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:12:38 UTC] user data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:12:38 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 23
+            [user_login] => acustomer
+            [user_pass] => $P$BLKvoZSqeiRiENxrdLlV86jL9wWKLz0
+            [user_nicename] => acustomer
+            [user_email] => acustomer@example.com
+            [user_url] => 
+            [user_registered] => 2017-03-25 19:14:08
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => asdf asdf
+        )
+
+    [ID] => 23
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:12:38 UTC] user meta data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:12:38 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => acustomer
+        )
+
+    [first_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [last_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[27-Mar-2017 15:12:38 UTC] user data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:12:38 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 47
+            [user_login] => brianbohl
+            [user_pass] => $P$BDe9rX9b8pQRilKwXIycOUUK5hR8uk0
+            [user_nicename] => brianbohl
+            [user_email] => imzsht7181@aol.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => brianbohl
+        )
+
+    [ID] => 47
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:12:38 UTC] user meta data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:12:38 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => brianbohl
+        )
+
+    [first_name] => Array
+        (
+            [0] => Brian
+        )
+
+    [last_name] => Array
+        (
+            [0] => Bohl
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 2
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:12:38 UTC] user data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:12:38 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 49
+            [user_login] => devondusseault
+            [user_pass] => $P$Bo8GXzFjEiZ9/9T5iQlOpeci/upVZX0
+            [user_nicename] => devondusseault
+            [user_email] => Dev5095@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:18
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => devondusseault
+        )
+
+    [ID] => 49
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:12:38 UTC] user meta data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:12:38 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => devondusseault
+        )
+
+    [first_name] => Array
+        (
+            [0] => Devon
+        )
+
+    [last_name] => Array
+        (
+            [0] => Dusseault
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => true
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:12:38 UTC] user data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:12:38 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 46
+            [user_login] => jameswillette
+            [user_pass] => $P$Bu2Y1Izq6vch/f9qKjlp1nGzRjTelD.
+            [user_nicename] => jameswillette
+            [user_email] => ddarko.willette@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => jameswillette
+        )
+
+    [ID] => 46
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:12:38 UTC] user meta data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:12:38 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => jameswillette
+        )
+
+    [first_name] => Array
+        (
+            [0] => James
+        )
+
+    [last_name] => Array
+        (
+            [0] => Willette
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:12:38 UTC] user data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:12:38 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 48
+            [user_login] => johnaverick
+            [user_pass] => $P$Brg2YjwoojwkKIw8oML5nrT6BSXA9z/
+            [user_nicename] => johnaverick
+            [user_email] => Patriotrights@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => johnaverick
+        )
+
+    [ID] => 48
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:12:38 UTC] user meta data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:12:38 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => johnaverick
+        )
+
+    [first_name] => Array
+        (
+            [0] => John
+        )
+
+    [last_name] => Array
+        (
+            [0] => Averick
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:12:38 UTC] user data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:12:38 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 45
+            [user_login] => kaylalamb
+            [user_pass] => $P$BfJ9eHBXz6hcoP88gb7CMDKXxFoW4e.
+            [user_nicename] => kaylalamb
+            [user_email] => kaylaglamlamb@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => kaylalamb
+        )
+
+    [ID] => 45
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:12:38 UTC] user meta data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:12:38 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => kaylalamb
+        )
+
+    [first_name] => Array
+        (
+            [0] => Kayla
+        )
+
+    [last_name] => Array
+        (
+            [0] => Lamb
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
