@@ -1,509 +1,5971 @@
-[21-Mar-2017 18:48:48 UTC] PHP Notice:  Undefined index: testmode in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-apple-pay.php on line 177
-[21-Mar-2017 18:48:48 UTC] PHP Stack trace:
-[21-Mar-2017 18:48:48 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:0
-[21-Mar-2017 18:48:48 UTC] PHP   2. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:17
-[21-Mar-2017 18:48:48 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-blog-header.php:19
-[21-Mar-2017 18:48:48 UTC] PHP   4. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template-loader.php:74
-[21-Mar-2017 18:48:48 UTC] PHP   5. get_header() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/page.php:18
-[21-Mar-2017 18:48:48 UTC] PHP   6. locate_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:45
-[21-Mar-2017 18:48:48 UTC] PHP   7. load_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:643
-[21-Mar-2017 18:48:48 UTC] PHP   8. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:684
-[21-Mar-2017 18:48:48 UTC] PHP   9. wp_head() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/header.php:22
-[21-Mar-2017 18:48:48 UTC] PHP  10. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:2574
-[21-Mar-2017 18:48:48 UTC] PHP  11. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:48:48 UTC] PHP  12. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:48:48 UTC] PHP  13. wp_enqueue_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:48:48 UTC] PHP  14. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/script-loader.php:1221
-[21-Mar-2017 18:48:48 UTC] PHP  15. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:48:48 UTC] PHP  16. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:48:48 UTC] PHP  17. WC_Stripe_Apple_Pay->cart_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:48:48 UTC] PHP Notice:  Undefined index: publishable_key in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-apple-pay.php on line 177
-[21-Mar-2017 18:48:48 UTC] PHP Stack trace:
-[21-Mar-2017 18:48:48 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:0
-[21-Mar-2017 18:48:48 UTC] PHP   2. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:17
-[21-Mar-2017 18:48:48 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-blog-header.php:19
-[21-Mar-2017 18:48:48 UTC] PHP   4. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template-loader.php:74
-[21-Mar-2017 18:48:48 UTC] PHP   5. get_header() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/page.php:18
-[21-Mar-2017 18:48:48 UTC] PHP   6. locate_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:45
-[21-Mar-2017 18:48:48 UTC] PHP   7. load_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:643
-[21-Mar-2017 18:48:48 UTC] PHP   8. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:684
-[21-Mar-2017 18:48:48 UTC] PHP   9. wp_head() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/header.php:22
-[21-Mar-2017 18:48:48 UTC] PHP  10. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:2574
-[21-Mar-2017 18:48:48 UTC] PHP  11. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:48:48 UTC] PHP  12. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:48:48 UTC] PHP  13. wp_enqueue_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:48:48 UTC] PHP  14. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/script-loader.php:1221
-[21-Mar-2017 18:48:48 UTC] PHP  15. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:48:48 UTC] PHP  16. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:48:48 UTC] PHP  17. WC_Stripe_Apple_Pay->cart_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:02 UTC] PHP Notice:  Undefined index: testmode in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-apple-pay.php on line 177
-[21-Mar-2017 18:49:02 UTC] PHP Stack trace:
-[21-Mar-2017 18:49:02 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:0
-[21-Mar-2017 18:49:02 UTC] PHP   2. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:17
-[21-Mar-2017 18:49:02 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-blog-header.php:19
-[21-Mar-2017 18:49:02 UTC] PHP   4. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template-loader.php:74
-[21-Mar-2017 18:49:02 UTC] PHP   5. get_header() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/page.php:18
-[21-Mar-2017 18:49:02 UTC] PHP   6. locate_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:45
-[21-Mar-2017 18:49:02 UTC] PHP   7. load_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:643
-[21-Mar-2017 18:49:02 UTC] PHP   8. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:684
-[21-Mar-2017 18:49:02 UTC] PHP   9. wp_head() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/header.php:22
-[21-Mar-2017 18:49:02 UTC] PHP  10. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:2574
-[21-Mar-2017 18:49:02 UTC] PHP  11. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:49:02 UTC] PHP  12. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:49:02 UTC] PHP  13. wp_enqueue_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:02 UTC] PHP  14. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/script-loader.php:1221
-[21-Mar-2017 18:49:02 UTC] PHP  15. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:49:02 UTC] PHP  16. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:49:02 UTC] PHP  17. WC_Stripe_Apple_Pay->cart_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:02 UTC] PHP Notice:  Undefined index: publishable_key in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-apple-pay.php on line 177
-[21-Mar-2017 18:49:02 UTC] PHP Stack trace:
-[21-Mar-2017 18:49:02 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:0
-[21-Mar-2017 18:49:02 UTC] PHP   2. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:17
-[21-Mar-2017 18:49:02 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-blog-header.php:19
-[21-Mar-2017 18:49:02 UTC] PHP   4. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template-loader.php:74
-[21-Mar-2017 18:49:02 UTC] PHP   5. get_header() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/page.php:18
-[21-Mar-2017 18:49:02 UTC] PHP   6. locate_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:45
-[21-Mar-2017 18:49:02 UTC] PHP   7. load_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:643
-[21-Mar-2017 18:49:02 UTC] PHP   8. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:684
-[21-Mar-2017 18:49:02 UTC] PHP   9. wp_head() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/header.php:22
-[21-Mar-2017 18:49:02 UTC] PHP  10. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:2574
-[21-Mar-2017 18:49:02 UTC] PHP  11. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:49:02 UTC] PHP  12. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:49:02 UTC] PHP  13. wp_enqueue_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:02 UTC] PHP  14. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/script-loader.php:1221
-[21-Mar-2017 18:49:02 UTC] PHP  15. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:49:02 UTC] PHP  16. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:49:02 UTC] PHP  17. WC_Stripe_Apple_Pay->cart_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:02 UTC] PHP Notice:  Undefined index: apple_pay in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-apple-pay.php on line 221
-[21-Mar-2017 18:49:02 UTC] PHP Stack trace:
-[21-Mar-2017 18:49:02 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:0
-[21-Mar-2017 18:49:02 UTC] PHP   2. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:17
-[21-Mar-2017 18:49:02 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-blog-header.php:19
-[21-Mar-2017 18:49:02 UTC] PHP   4. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template-loader.php:74
-[21-Mar-2017 18:49:02 UTC] PHP   5. get_template_part() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/page.php:27
-[21-Mar-2017 18:49:02 UTC] PHP   6. locate_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:167
-[21-Mar-2017 18:49:02 UTC] PHP   7. load_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:643
-[21-Mar-2017 18:49:02 UTC] PHP   8. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:686
-[21-Mar-2017 18:49:02 UTC] PHP   9. the_content() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/template-parts/page/content-page.php:22
-[21-Mar-2017 18:49:02 UTC] PHP  10. apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/post-template.php:240
-[21-Mar-2017 18:49:02 UTC] PHP  11. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:203
-[21-Mar-2017 18:49:02 UTC] PHP  12. do_shortcode() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:02 UTC] PHP  13. preg_replace_callback() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:223
-[21-Mar-2017 18:49:02 UTC] PHP  14. do_shortcode_tag() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:223
-[21-Mar-2017 18:49:02 UTC] PHP  15. WC_Shortcodes::cart() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:345
-[21-Mar-2017 18:49:02 UTC] PHP  16. WC_Shortcodes::shortcode_wrapper() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php:128
-[21-Mar-2017 18:49:02 UTC] PHP  17. WC_Shortcode_Cart::output() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php:71
-[21-Mar-2017 18:49:02 UTC] PHP  18. wc_get_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php:79
-[21-Mar-2017 18:49:02 UTC] PHP  19. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/wc-core-functions.php:203
-[21-Mar-2017 18:49:02 UTC] PHP  20. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/templates/cart/cart.php:162
-[21-Mar-2017 18:49:02 UTC] PHP  21. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:49:02 UTC] PHP  22. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:49:02 UTC] PHP  23. woocommerce_cart_totals() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:02 UTC] PHP  24. wc_get_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/wc-template-functions.php:1325
-[21-Mar-2017 18:49:02 UTC] PHP  25. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/wc-core-functions.php:203
-[21-Mar-2017 18:49:02 UTC] PHP  26. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/templates/cart/cart-totals.php:101
-[21-Mar-2017 18:49:02 UTC] PHP  27. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:49:02 UTC] PHP  28. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:49:02 UTC] PHP  29. WC_Stripe_Apple_Pay->display_apple_pay_button() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:02 UTC] PHP Notice:  Undefined index: apple_pay in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-apple-pay.php on line 260
-[21-Mar-2017 18:49:02 UTC] PHP Stack trace:
-[21-Mar-2017 18:49:02 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:0
-[21-Mar-2017 18:49:02 UTC] PHP   2. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:17
-[21-Mar-2017 18:49:02 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-blog-header.php:19
-[21-Mar-2017 18:49:02 UTC] PHP   4. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template-loader.php:74
-[21-Mar-2017 18:49:02 UTC] PHP   5. get_template_part() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/page.php:27
-[21-Mar-2017 18:49:02 UTC] PHP   6. locate_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:167
-[21-Mar-2017 18:49:02 UTC] PHP   7. load_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:643
-[21-Mar-2017 18:49:02 UTC] PHP   8. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:686
-[21-Mar-2017 18:49:02 UTC] PHP   9. the_content() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/template-parts/page/content-page.php:22
-[21-Mar-2017 18:49:02 UTC] PHP  10. apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/post-template.php:240
-[21-Mar-2017 18:49:02 UTC] PHP  11. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:203
-[21-Mar-2017 18:49:02 UTC] PHP  12. do_shortcode() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:02 UTC] PHP  13. preg_replace_callback() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:223
-[21-Mar-2017 18:49:02 UTC] PHP  14. do_shortcode_tag() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:223
-[21-Mar-2017 18:49:02 UTC] PHP  15. WC_Shortcodes::cart() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:345
-[21-Mar-2017 18:49:02 UTC] PHP  16. WC_Shortcodes::shortcode_wrapper() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php:128
-[21-Mar-2017 18:49:02 UTC] PHP  17. WC_Shortcode_Cart::output() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php:71
-[21-Mar-2017 18:49:02 UTC] PHP  18. wc_get_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-cart.php:79
-[21-Mar-2017 18:49:02 UTC] PHP  19. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/wc-core-functions.php:203
-[21-Mar-2017 18:49:02 UTC] PHP  20. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/templates/cart/cart.php:162
-[21-Mar-2017 18:49:02 UTC] PHP  21. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:49:02 UTC] PHP  22. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:49:02 UTC] PHP  23. woocommerce_cart_totals() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:02 UTC] PHP  24. wc_get_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/wc-template-functions.php:1325
-[21-Mar-2017 18:49:02 UTC] PHP  25. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/wc-core-functions.php:203
-[21-Mar-2017 18:49:02 UTC] PHP  26. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/templates/cart/cart-totals.php:101
-[21-Mar-2017 18:49:02 UTC] PHP  27. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:49:02 UTC] PHP  28. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:49:02 UTC] PHP  29. WC_Stripe_Apple_Pay->display_apple_pay_separator_html() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:05 UTC] PHP Notice:  Undefined index: testmode in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-apple-pay.php on line 177
-[21-Mar-2017 18:49:05 UTC] PHP Stack trace:
-[21-Mar-2017 18:49:05 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:0
-[21-Mar-2017 18:49:05 UTC] PHP   2. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:17
-[21-Mar-2017 18:49:05 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-blog-header.php:19
-[21-Mar-2017 18:49:05 UTC] PHP   4. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template-loader.php:74
-[21-Mar-2017 18:49:05 UTC] PHP   5. get_header() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/page.php:18
-[21-Mar-2017 18:49:05 UTC] PHP   6. locate_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:45
-[21-Mar-2017 18:49:05 UTC] PHP   7. load_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:643
-[21-Mar-2017 18:49:05 UTC] PHP   8. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:684
-[21-Mar-2017 18:49:05 UTC] PHP   9. wp_head() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/header.php:22
-[21-Mar-2017 18:49:05 UTC] PHP  10. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:2574
-[21-Mar-2017 18:49:05 UTC] PHP  11. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:49:05 UTC] PHP  12. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:49:05 UTC] PHP  13. wp_enqueue_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:05 UTC] PHP  14. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/script-loader.php:1221
-[21-Mar-2017 18:49:05 UTC] PHP  15. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:49:05 UTC] PHP  16. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:49:05 UTC] PHP  17. WC_Stripe_Apple_Pay->cart_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:05 UTC] PHP Notice:  Undefined index: publishable_key in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-apple-pay.php on line 177
-[21-Mar-2017 18:49:05 UTC] PHP Stack trace:
-[21-Mar-2017 18:49:05 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:0
-[21-Mar-2017 18:49:05 UTC] PHP   2. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:17
-[21-Mar-2017 18:49:05 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-blog-header.php:19
-[21-Mar-2017 18:49:05 UTC] PHP   4. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template-loader.php:74
-[21-Mar-2017 18:49:05 UTC] PHP   5. get_header() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/page.php:18
-[21-Mar-2017 18:49:05 UTC] PHP   6. locate_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:45
-[21-Mar-2017 18:49:05 UTC] PHP   7. load_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:643
-[21-Mar-2017 18:49:05 UTC] PHP   8. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:684
-[21-Mar-2017 18:49:05 UTC] PHP   9. wp_head() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/header.php:22
-[21-Mar-2017 18:49:05 UTC] PHP  10. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:2574
-[21-Mar-2017 18:49:05 UTC] PHP  11. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:49:05 UTC] PHP  12. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:49:05 UTC] PHP  13. wp_enqueue_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:05 UTC] PHP  14. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/script-loader.php:1221
-[21-Mar-2017 18:49:05 UTC] PHP  15. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:49:05 UTC] PHP  16. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:49:05 UTC] PHP  17. WC_Stripe_Apple_Pay->cart_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:05 UTC] PHP Notice:  Undefined index: apple_pay in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-apple-pay.php on line 221
-[21-Mar-2017 18:49:05 UTC] PHP Stack trace:
-[21-Mar-2017 18:49:05 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:0
-[21-Mar-2017 18:49:05 UTC] PHP   2. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:17
-[21-Mar-2017 18:49:05 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-blog-header.php:19
-[21-Mar-2017 18:49:05 UTC] PHP   4. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template-loader.php:74
-[21-Mar-2017 18:49:05 UTC] PHP   5. get_template_part() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/page.php:27
-[21-Mar-2017 18:49:05 UTC] PHP   6. locate_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:167
-[21-Mar-2017 18:49:05 UTC] PHP   7. load_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:643
-[21-Mar-2017 18:49:05 UTC] PHP   8. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:686
-[21-Mar-2017 18:49:05 UTC] PHP   9. the_content() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/template-parts/page/content-page.php:22
-[21-Mar-2017 18:49:05 UTC] PHP  10. apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/post-template.php:240
-[21-Mar-2017 18:49:05 UTC] PHP  11. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:203
-[21-Mar-2017 18:49:05 UTC] PHP  12. do_shortcode() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:05 UTC] PHP  13. preg_replace_callback() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:223
-[21-Mar-2017 18:49:05 UTC] PHP  14. do_shortcode_tag() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:223
-[21-Mar-2017 18:49:05 UTC] PHP  15. WC_Shortcodes::checkout() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:345
-[21-Mar-2017 18:49:05 UTC] PHP  16. WC_Shortcodes::shortcode_wrapper() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php:138
-[21-Mar-2017 18:49:05 UTC] PHP  17. WC_Shortcode_Checkout::output() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php:71
-[21-Mar-2017 18:49:05 UTC] PHP  18. WC_Shortcode_Checkout::checkout() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php:63
-[21-Mar-2017 18:49:05 UTC] PHP  19. wc_get_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php:248
-[21-Mar-2017 18:49:05 UTC] PHP  20. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/wc-core-functions.php:203
-[21-Mar-2017 18:49:05 UTC] PHP  21. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php:39
-[21-Mar-2017 18:49:05 UTC] PHP  22. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:49:05 UTC] PHP  23. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:49:05 UTC] PHP  24. WC_Stripe_Apple_Pay->display_apple_pay_button() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:05 UTC] PHP Notice:  Undefined index: apple_pay in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-apple-pay.php on line 260
-[21-Mar-2017 18:49:05 UTC] PHP Stack trace:
-[21-Mar-2017 18:49:05 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:0
-[21-Mar-2017 18:49:05 UTC] PHP   2. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:17
-[21-Mar-2017 18:49:05 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-blog-header.php:19
-[21-Mar-2017 18:49:05 UTC] PHP   4. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template-loader.php:74
-[21-Mar-2017 18:49:05 UTC] PHP   5. get_template_part() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/page.php:27
-[21-Mar-2017 18:49:05 UTC] PHP   6. locate_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:167
-[21-Mar-2017 18:49:05 UTC] PHP   7. load_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:643
-[21-Mar-2017 18:49:05 UTC] PHP   8. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:686
-[21-Mar-2017 18:49:05 UTC] PHP   9. the_content() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/template-parts/page/content-page.php:22
-[21-Mar-2017 18:49:05 UTC] PHP  10. apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/post-template.php:240
-[21-Mar-2017 18:49:05 UTC] PHP  11. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:203
-[21-Mar-2017 18:49:05 UTC] PHP  12. do_shortcode() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:49:05 UTC] PHP  13. preg_replace_callback() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:223
-[21-Mar-2017 18:49:05 UTC] PHP  14. do_shortcode_tag() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:223
-[21-Mar-2017 18:49:05 UTC] PHP  15. WC_Shortcodes::checkout() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:345
-[21-Mar-2017 18:49:05 UTC] PHP  16. WC_Shortcodes::shortcode_wrapper() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php:138
-[21-Mar-2017 18:49:05 UTC] PHP  17. WC_Shortcode_Checkout::output() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php:71
-[21-Mar-2017 18:49:05 UTC] PHP  18. WC_Shortcode_Checkout::checkout() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php:63
-[21-Mar-2017 18:49:05 UTC] PHP  19. wc_get_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php:248
-[21-Mar-2017 18:49:05 UTC] PHP  20. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/wc-core-functions.php:203
-[21-Mar-2017 18:49:05 UTC] PHP  21. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php:39
-[21-Mar-2017 18:49:05 UTC] PHP  22. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:49:05 UTC] PHP  23. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:49:05 UTC] PHP  24. WC_Stripe_Apple_Pay->display_apple_pay_separator_html() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:54:21 UTC] PHP Notice:  Undefined index: testmode in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-apple-pay.php on line 177
-[21-Mar-2017 18:54:21 UTC] PHP Stack trace:
-[21-Mar-2017 18:54:21 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:0
-[21-Mar-2017 18:54:21 UTC] PHP   2. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:17
-[21-Mar-2017 18:54:21 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-blog-header.php:19
-[21-Mar-2017 18:54:21 UTC] PHP   4. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template-loader.php:74
-[21-Mar-2017 18:54:21 UTC] PHP   5. get_header() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/page.php:18
-[21-Mar-2017 18:54:21 UTC] PHP   6. locate_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:45
-[21-Mar-2017 18:54:21 UTC] PHP   7. load_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:643
-[21-Mar-2017 18:54:21 UTC] PHP   8. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:684
-[21-Mar-2017 18:54:21 UTC] PHP   9. wp_head() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/header.php:22
-[21-Mar-2017 18:54:21 UTC] PHP  10. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:2574
-[21-Mar-2017 18:54:21 UTC] PHP  11. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:54:21 UTC] PHP  12. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:54:21 UTC] PHP  13. wp_enqueue_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:54:21 UTC] PHP  14. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/script-loader.php:1221
-[21-Mar-2017 18:54:21 UTC] PHP  15. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:54:21 UTC] PHP  16. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:54:21 UTC] PHP  17. WC_Stripe_Apple_Pay->cart_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:54:21 UTC] PHP Notice:  Undefined index: publishable_key in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-apple-pay.php on line 177
-[21-Mar-2017 18:54:21 UTC] PHP Stack trace:
-[21-Mar-2017 18:54:21 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:0
-[21-Mar-2017 18:54:21 UTC] PHP   2. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:17
-[21-Mar-2017 18:54:21 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-blog-header.php:19
-[21-Mar-2017 18:54:21 UTC] PHP   4. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template-loader.php:74
-[21-Mar-2017 18:54:21 UTC] PHP   5. get_header() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/page.php:18
-[21-Mar-2017 18:54:21 UTC] PHP   6. locate_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:45
-[21-Mar-2017 18:54:21 UTC] PHP   7. load_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:643
-[21-Mar-2017 18:54:21 UTC] PHP   8. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:684
-[21-Mar-2017 18:54:21 UTC] PHP   9. wp_head() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/header.php:22
-[21-Mar-2017 18:54:21 UTC] PHP  10. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:2574
-[21-Mar-2017 18:54:21 UTC] PHP  11. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:54:21 UTC] PHP  12. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:54:21 UTC] PHP  13. wp_enqueue_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:54:21 UTC] PHP  14. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/script-loader.php:1221
-[21-Mar-2017 18:54:21 UTC] PHP  15. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:54:21 UTC] PHP  16. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:54:21 UTC] PHP  17. WC_Stripe_Apple_Pay->cart_scripts() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:54:21 UTC] PHP Notice:  Undefined index: apple_pay in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-apple-pay.php on line 221
-[21-Mar-2017 18:54:21 UTC] PHP Stack trace:
-[21-Mar-2017 18:54:21 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:0
-[21-Mar-2017 18:54:21 UTC] PHP   2. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:17
-[21-Mar-2017 18:54:21 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-blog-header.php:19
-[21-Mar-2017 18:54:21 UTC] PHP   4. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template-loader.php:74
-[21-Mar-2017 18:54:21 UTC] PHP   5. get_template_part() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/page.php:27
-[21-Mar-2017 18:54:21 UTC] PHP   6. locate_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:167
-[21-Mar-2017 18:54:21 UTC] PHP   7. load_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:643
-[21-Mar-2017 18:54:21 UTC] PHP   8. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:686
-[21-Mar-2017 18:54:21 UTC] PHP   9. the_content() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/template-parts/page/content-page.php:22
-[21-Mar-2017 18:54:21 UTC] PHP  10. apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/post-template.php:240
-[21-Mar-2017 18:54:21 UTC] PHP  11. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:203
-[21-Mar-2017 18:54:21 UTC] PHP  12. do_shortcode() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:54:21 UTC] PHP  13. preg_replace_callback() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:223
-[21-Mar-2017 18:54:21 UTC] PHP  14. do_shortcode_tag() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:223
-[21-Mar-2017 18:54:21 UTC] PHP  15. WC_Shortcodes::checkout() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:345
-[21-Mar-2017 18:54:21 UTC] PHP  16. WC_Shortcodes::shortcode_wrapper() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php:138
-[21-Mar-2017 18:54:21 UTC] PHP  17. WC_Shortcode_Checkout::output() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php:71
-[21-Mar-2017 18:54:21 UTC] PHP  18. WC_Shortcode_Checkout::checkout() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php:63
-[21-Mar-2017 18:54:21 UTC] PHP  19. wc_get_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php:248
-[21-Mar-2017 18:54:21 UTC] PHP  20. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/wc-core-functions.php:203
-[21-Mar-2017 18:54:21 UTC] PHP  21. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php:39
-[21-Mar-2017 18:54:21 UTC] PHP  22. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:54:21 UTC] PHP  23. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:54:21 UTC] PHP  24. WC_Stripe_Apple_Pay->display_apple_pay_button() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:54:21 UTC] PHP Notice:  Undefined index: apple_pay in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-stripe-apple-pay.php on line 260
-[21-Mar-2017 18:54:21 UTC] PHP Stack trace:
-[21-Mar-2017 18:54:21 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:0
-[21-Mar-2017 18:54:21 UTC] PHP   2. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/index.php:17
-[21-Mar-2017 18:54:21 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-blog-header.php:19
-[21-Mar-2017 18:54:21 UTC] PHP   4. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template-loader.php:74
-[21-Mar-2017 18:54:21 UTC] PHP   5. get_template_part() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/page.php:27
-[21-Mar-2017 18:54:21 UTC] PHP   6. locate_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/general-template.php:167
-[21-Mar-2017 18:54:21 UTC] PHP   7. load_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:643
-[21-Mar-2017 18:54:21 UTC] PHP   8. require() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/template.php:686
-[21-Mar-2017 18:54:21 UTC] PHP   9. the_content() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/themes/twentyseventeen/template-parts/page/content-page.php:22
-[21-Mar-2017 18:54:21 UTC] PHP  10. apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/post-template.php:240
-[21-Mar-2017 18:54:21 UTC] PHP  11. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:203
-[21-Mar-2017 18:54:21 UTC] PHP  12. do_shortcode() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:54:21 UTC] PHP  13. preg_replace_callback() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:223
-[21-Mar-2017 18:54:21 UTC] PHP  14. do_shortcode_tag() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:223
-[21-Mar-2017 18:54:21 UTC] PHP  15. WC_Shortcodes::checkout() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/shortcodes.php:345
-[21-Mar-2017 18:54:21 UTC] PHP  16. WC_Shortcodes::shortcode_wrapper() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php:138
-[21-Mar-2017 18:54:21 UTC] PHP  17. WC_Shortcode_Checkout::output() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php:71
-[21-Mar-2017 18:54:21 UTC] PHP  18. WC_Shortcode_Checkout::checkout() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php:63
-[21-Mar-2017 18:54:21 UTC] PHP  19. wc_get_template() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php:248
-[21-Mar-2017 18:54:21 UTC] PHP  20. include() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/wc-core-functions.php:203
-[21-Mar-2017 18:54:21 UTC] PHP  21. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php:39
-[21-Mar-2017 18:54:21 UTC] PHP  22. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:54:21 UTC] PHP  23. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:54:21 UTC] PHP  24. WC_Stripe_Apple_Pay->display_apple_pay_separator_html() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:56:21 UTC] PHP Notice:  Undefined index: apple_pay_domain_set in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-gateway-stripe.php on line 321
-[21-Mar-2017 18:56:21 UTC] PHP Stack trace:
-[21-Mar-2017 18:56:21 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:0
-[21-Mar-2017 18:56:21 UTC] PHP   2. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:212
-[21-Mar-2017 18:56:21 UTC] PHP   3. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[21-Mar-2017 18:56:21 UTC] PHP   4. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[21-Mar-2017 18:56:21 UTC] PHP   5. WC_Admin_Menus->settings_page_init() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[21-Mar-2017 18:56:21 UTC] PHP   6. WooCommerce->payment_gateways() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php:89
-[21-Mar-2017 18:56:21 UTC] PHP   7. WC_Payment_Gateways::instance() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/woocommerce.php:520
-[21-Mar-2017 18:56:21 UTC] PHP   8. WC_Payment_Gateways->__construct() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php:40
-[21-Mar-2017 18:56:21 UTC] PHP   9. WC_Payment_Gateways->init() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php:67
-[21-Mar-2017 18:56:21 UTC] PHP  10. WC_Gateway_Stripe->__construct() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php:105
-[21-Mar-2017 18:56:21 UTC] PHP  11. WC_Gateway_Stripe->init_apple_pay() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-gateway-stripe.php:182
-[21-Mar-2017 18:56:21 UTC] PHP  12. WC_Gateway_Stripe->process_apple_pay_verification() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woocommerce-gateway-stripe/includes/class-wc-gateway-stripe.php:269
-[22-Mar-2017 00:57:35 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WooCommerce.com or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://support.woothemes.com/hc/en-us">help center</a>. (WordPress could not establish a secure connection to WooCommerce.com. Please contact your server administrator.) in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woothemes-updater/classes/class-woothemes-updater-update-checker.php on line 445
-[22-Mar-2017 00:57:35 UTC] PHP Stack trace:
-[22-Mar-2017 00:57:35 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:0
-[22-Mar-2017 00:57:35 UTC] PHP   2. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:10
-[22-Mar-2017 00:57:35 UTC] PHP   3. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:329
-[22-Mar-2017 00:57:35 UTC] PHP   4. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 00:57:35 UTC] PHP   5. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 00:57:35 UTC] PHP   6. wp_update_plugins() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 00:57:35 UTC] PHP   7. set_site_transient() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/update.php:268
-[22-Mar-2017 00:57:35 UTC] PHP   8. apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/option.php:1653
-[22-Mar-2017 00:57:35 UTC] PHP   9. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:203
-[22-Mar-2017 00:57:35 UTC] PHP  10. WooThemes_Updater_Update_Checker->plugin_update_check() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:300
-[22-Mar-2017 00:57:35 UTC] PHP  11. WooThemes_Updater_Update_Checker->fetch_remote_update_data() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woothemes-updater/classes/class-woothemes-updater-update-checker.php:179
-[22-Mar-2017 00:57:35 UTC] PHP  12. WooThemes_Updater_Update_Checker->request() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woothemes-updater/classes/class-woothemes-updater-update-checker.php:163
-[22-Mar-2017 00:57:35 UTC] PHP  13. trigger_error() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woothemes-updater/classes/class-woothemes-updater-update-checker.php:445
-[22-Mar-2017 00:57:38 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WooCommerce.com or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://support.woothemes.com/hc/en-us">help center</a>. (WordPress could not establish a secure connection to WooCommerce.com. Please contact your server administrator.) in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woothemes-updater/classes/class-woothemes-updater-update-checker.php on line 445
-[22-Mar-2017 00:57:38 UTC] PHP Stack trace:
-[22-Mar-2017 00:57:38 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:0
-[22-Mar-2017 00:57:38 UTC] PHP   2. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:10
-[22-Mar-2017 00:57:38 UTC] PHP   3. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:329
-[22-Mar-2017 00:57:38 UTC] PHP   4. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 00:57:38 UTC] PHP   5. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 00:57:38 UTC] PHP   6. wp_update_plugins() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 00:57:38 UTC] PHP   7. set_site_transient() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/update.php:355
-[22-Mar-2017 00:57:38 UTC] PHP   8. apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/option.php:1653
-[22-Mar-2017 00:57:38 UTC] PHP   9. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:203
-[22-Mar-2017 00:57:38 UTC] PHP  10. WooThemes_Updater_Update_Checker->plugin_update_check() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:300
-[22-Mar-2017 00:57:38 UTC] PHP  11. WooThemes_Updater_Update_Checker->fetch_remote_update_data() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woothemes-updater/classes/class-woothemes-updater-update-checker.php:179
-[22-Mar-2017 00:57:38 UTC] PHP  12. WooThemes_Updater_Update_Checker->request() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woothemes-updater/classes/class-woothemes-updater-update-checker.php:163
-[22-Mar-2017 00:57:38 UTC] PHP  13. trigger_error() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woothemes-updater/classes/class-woothemes-updater-update-checker.php:445
-[22-Mar-2017 00:58:04 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WooCommerce.com or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://support.woothemes.com/hc/en-us">help center</a>. (WordPress could not establish a secure connection to WooCommerce.com. Please contact your server administrator.) in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woothemes-updater/classes/class-woothemes-updater-update-checker.php on line 445
-[22-Mar-2017 00:58:04 UTC] PHP Stack trace:
-[22-Mar-2017 00:58:04 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin-ajax.php:0
-[22-Mar-2017 00:58:04 UTC] PHP   2. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin-ajax.php:91
-[22-Mar-2017 00:58:04 UTC] PHP   3. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 00:58:04 UTC] PHP   4. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 00:58:04 UTC] PHP   5. wp_ajax_delete_plugin() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 00:58:04 UTC] PHP   6. delete_plugins() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/includes/ajax-actions.php:3806
-[22-Mar-2017 00:58:04 UTC] PHP   7. set_site_transient() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/includes/plugin.php:893
-[22-Mar-2017 00:58:04 UTC] PHP   8. apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/option.php:1653
-[22-Mar-2017 00:58:04 UTC] PHP   9. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:203
-[22-Mar-2017 00:58:04 UTC] PHP  10. WooThemes_Updater_Update_Checker->plugin_update_check() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:300
-[22-Mar-2017 00:58:04 UTC] PHP  11. WooThemes_Updater_Update_Checker->fetch_remote_update_data() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woothemes-updater/classes/class-woothemes-updater-update-checker.php:179
-[22-Mar-2017 00:58:04 UTC] PHP  12. WooThemes_Updater_Update_Checker->request() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woothemes-updater/classes/class-woothemes-updater-update-checker.php:163
-[22-Mar-2017 00:58:04 UTC] PHP  13. trigger_error() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/woothemes-updater/classes/class-woothemes-updater-update-checker.php:445
-[22-Mar-2017 01:33:40 UTC] PHP Notice:  Undefined variable: errormsg in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.class.php on line 515
-[22-Mar-2017 01:33:40 UTC] PHP Stack trace:
-[22-Mar-2017 01:33:40 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:0
-[22-Mar-2017 01:33:40 UTC] PHP   2. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:430
-[22-Mar-2017 01:33:40 UTC] PHP   3. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin-header.php:255
-[22-Mar-2017 01:33:40 UTC] PHP   4. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 01:33:40 UTC] PHP   5. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 01:33:40 UTC] PHP   6. XooUserUltra->uultra_display_custom_message() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 01:33:40 UTC] PHP   7. XooUserUltra->uultra_fresh_install_message() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.class.php:483
-[22-Mar-2017 01:33:40 UTC] PHP Notice:  Undefined variable: errormsg in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.class.php on line 515
-[22-Mar-2017 01:33:40 UTC] PHP Stack trace:
-[22-Mar-2017 01:33:40 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:0
-[22-Mar-2017 01:33:40 UTC] PHP   2. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:10
-[22-Mar-2017 01:33:40 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:214
-[22-Mar-2017 01:33:40 UTC] PHP   4. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin-header.php:255
-[22-Mar-2017 01:33:40 UTC] PHP   5. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 01:33:40 UTC] PHP   6. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 01:33:40 UTC] PHP   7. XooUserUltra->uultra_display_custom_message() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 01:33:40 UTC] PHP   8. XooUserUltra->uultra_fresh_install_message() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.class.php:483
-[22-Mar-2017 01:34:19 UTC] PHP Notice:  Undefined variable: errormsg in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.class.php on line 515
-[22-Mar-2017 01:34:19 UTC] PHP Stack trace:
-[22-Mar-2017 01:34:19 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:0
-[22-Mar-2017 01:34:19 UTC] PHP   2. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:10
-[22-Mar-2017 01:34:19 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:214
-[22-Mar-2017 01:34:19 UTC] PHP   4. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin-header.php:255
-[22-Mar-2017 01:34:19 UTC] PHP   5. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 01:34:19 UTC] PHP   6. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 01:34:19 UTC] PHP   7. XooUserUltra->uultra_display_custom_message() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 01:34:19 UTC] PHP   8. XooUserUltra->uultra_fresh_install_message() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.class.php:483
-[22-Mar-2017 01:34:24 UTC] PHP Notice:  Undefined variable: errormsg in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.class.php on line 515
-[22-Mar-2017 01:34:24 UTC] PHP Stack trace:
-[22-Mar-2017 01:34:24 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:0
-[22-Mar-2017 01:34:24 UTC] PHP   2. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:10
-[22-Mar-2017 01:34:24 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:214
-[22-Mar-2017 01:34:24 UTC] PHP   4. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin-header.php:255
-[22-Mar-2017 01:34:24 UTC] PHP   5. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 01:34:24 UTC] PHP   6. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 01:34:24 UTC] PHP   7. XooUserUltra->uultra_display_custom_message() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 01:34:24 UTC] PHP   8. XooUserUltra->uultra_fresh_install_message() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.class.php:483
-[22-Mar-2017 01:35:06 UTC] PHP Notice:  Undefined variable: errormsg in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.class.php on line 515
-[22-Mar-2017 01:35:06 UTC] PHP Stack trace:
-[22-Mar-2017 01:35:06 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:0
-[22-Mar-2017 01:35:06 UTC] PHP   2. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:10
-[22-Mar-2017 01:35:06 UTC] PHP   3. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:214
-[22-Mar-2017 01:35:06 UTC] PHP   4. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin-header.php:255
-[22-Mar-2017 01:35:06 UTC] PHP   5. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 01:35:06 UTC] PHP   6. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 01:35:06 UTC] PHP   7. XooUserUltra->uultra_display_custom_message() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 01:35:06 UTC] PHP   8. XooUserUltra->uultra_fresh_install_message() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.class.php:483
-[22-Mar-2017 01:35:41 UTC] PHP Notice:  Undefined variable: tooltip in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/admin/tabs/fields.php on line 460
-[22-Mar-2017 01:35:41 UTC] PHP Stack trace:
-[22-Mar-2017 01:35:41 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:0
-[22-Mar-2017 01:35:41 UTC] PHP   2. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:222
-[22-Mar-2017 01:35:41 UTC] PHP   3. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 01:35:41 UTC] PHP   4. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 01:35:41 UTC] PHP   5. XooUserAdmin->admin_page() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 01:35:41 UTC] PHP   6. XooUserAdmin->include_tab_content() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:1146
-[22-Mar-2017 01:35:41 UTC] PHP   7. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:921
-[22-Mar-2017 01:35:41 UTC] PHP Notice:  Undefined variable: tooltip in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/admin/tabs/fields.php on line 460
-[22-Mar-2017 01:35:41 UTC] PHP Stack trace:
-[22-Mar-2017 01:35:41 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:0
-[22-Mar-2017 01:35:41 UTC] PHP   2. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:222
-[22-Mar-2017 01:35:41 UTC] PHP   3. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 01:35:41 UTC] PHP   4. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 01:35:41 UTC] PHP   5. XooUserAdmin->admin_page() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 01:35:41 UTC] PHP   6. XooUserAdmin->include_tab_content() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:1146
-[22-Mar-2017 01:35:41 UTC] PHP   7. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:921
-[22-Mar-2017 01:35:41 UTC] PHP Notice:  Undefined variable: tooltip in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/admin/tabs/fields.php on line 460
-[22-Mar-2017 01:35:41 UTC] PHP Stack trace:
-[22-Mar-2017 01:35:41 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:0
-[22-Mar-2017 01:35:41 UTC] PHP   2. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:222
-[22-Mar-2017 01:35:41 UTC] PHP   3. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 01:35:41 UTC] PHP   4. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 01:35:41 UTC] PHP   5. XooUserAdmin->admin_page() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 01:35:41 UTC] PHP   6. XooUserAdmin->include_tab_content() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:1146
-[22-Mar-2017 01:35:41 UTC] PHP   7. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:921
-[22-Mar-2017 01:35:41 UTC] PHP Notice:  Undefined variable: tooltip in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/admin/tabs/fields.php on line 460
-[22-Mar-2017 01:35:41 UTC] PHP Stack trace:
-[22-Mar-2017 01:35:41 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:0
-[22-Mar-2017 01:35:41 UTC] PHP   2. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:222
-[22-Mar-2017 01:35:41 UTC] PHP   3. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 01:35:41 UTC] PHP   4. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 01:35:41 UTC] PHP   5. XooUserAdmin->admin_page() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 01:35:41 UTC] PHP   6. XooUserAdmin->include_tab_content() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:1146
-[22-Mar-2017 01:35:41 UTC] PHP   7. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:921
-[22-Mar-2017 01:35:41 UTC] PHP Notice:  Undefined variable: tooltip in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/admin/tabs/fields.php on line 460
-[22-Mar-2017 01:35:41 UTC] PHP Stack trace:
-[22-Mar-2017 01:35:41 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:0
-[22-Mar-2017 01:35:41 UTC] PHP   2. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:222
-[22-Mar-2017 01:35:41 UTC] PHP   3. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 01:35:41 UTC] PHP   4. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 01:35:41 UTC] PHP   5. XooUserAdmin->admin_page() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 01:35:41 UTC] PHP   6. XooUserAdmin->include_tab_content() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:1146
-[22-Mar-2017 01:35:41 UTC] PHP   7. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:921
-[22-Mar-2017 01:35:41 UTC] PHP Notice:  Undefined variable: tooltip in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/admin/tabs/fields.php on line 460
-[22-Mar-2017 01:35:41 UTC] PHP Stack trace:
-[22-Mar-2017 01:35:41 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:0
-[22-Mar-2017 01:35:41 UTC] PHP   2. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:222
-[22-Mar-2017 01:35:41 UTC] PHP   3. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 01:35:41 UTC] PHP   4. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 01:35:41 UTC] PHP   5. XooUserAdmin->admin_page() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 01:35:41 UTC] PHP   6. XooUserAdmin->include_tab_content() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:1146
-[22-Mar-2017 01:35:41 UTC] PHP   7. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:921
-[22-Mar-2017 01:35:41 UTC] PHP Notice:  Undefined variable: tooltip in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/admin/tabs/fields.php on line 460
-[22-Mar-2017 01:35:41 UTC] PHP Stack trace:
-[22-Mar-2017 01:35:41 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:0
-[22-Mar-2017 01:35:41 UTC] PHP   2. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:222
-[22-Mar-2017 01:35:41 UTC] PHP   3. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 01:35:41 UTC] PHP   4. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 01:35:41 UTC] PHP   5. XooUserAdmin->admin_page() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 01:35:41 UTC] PHP   6. XooUserAdmin->include_tab_content() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:1146
-[22-Mar-2017 01:35:41 UTC] PHP   7. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:921
-[22-Mar-2017 01:35:41 UTC] PHP Notice:  Undefined variable: tooltip in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/admin/tabs/fields.php on line 460
-[22-Mar-2017 01:35:41 UTC] PHP Stack trace:
-[22-Mar-2017 01:35:41 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:0
-[22-Mar-2017 01:35:41 UTC] PHP   2. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:222
-[22-Mar-2017 01:35:41 UTC] PHP   3. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 01:35:41 UTC] PHP   4. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 01:35:41 UTC] PHP   5. XooUserAdmin->admin_page() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 01:35:41 UTC] PHP   6. XooUserAdmin->include_tab_content() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:1146
-[22-Mar-2017 01:35:41 UTC] PHP   7. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/users-ultra/xooclasses/xoo.userultra.admin.php:921
-[22-Mar-2017 12:33:03 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/update.php on line 319
-[22-Mar-2017 12:33:03 UTC] PHP Stack trace:
-[22-Mar-2017 12:33:03 UTC] PHP   1. {main}() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:0
-[22-Mar-2017 12:33:03 UTC] PHP   2. require_once() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/plugins.php:10
-[22-Mar-2017 12:33:03 UTC] PHP   3. do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-admin/admin.php:329
-[22-Mar-2017 12:33:03 UTC] PHP   4. WP_Hook->do_action() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/plugin.php:453
-[22-Mar-2017 12:33:03 UTC] PHP   5. WP_Hook->apply_filters() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:323
-[22-Mar-2017 12:33:03 UTC] PHP   6. wp_update_plugins() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/class-wp-hook.php:298
-[22-Mar-2017 12:33:03 UTC] PHP   7. trigger_error() /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-includes/update.php:319
-[22-Mar-2017 13:03:12 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/jrwdev-user-importer/admin/class-jrwdev-user-importer-admin.php on line 116
-[22-Mar-2017 13:03:13 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /Users/davidchappy/GoogleDrive/Code/htdocs/sites/wp-wads-user-importer/wwwroot/wp-content/plugins/jrwdev-user-importer/admin/class-jrwdev-user-importer-admin.php on line 116
+[27-Mar-2017 15:03:04 UTC] user data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:03:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 23
+            [user_login] => acustomer
+            [user_pass] => $P$BLKvoZSqeiRiENxrdLlV86jL9wWKLz0
+            [user_nicename] => acustomer
+            [user_email] => acustomer@example.com
+            [user_url] => 
+            [user_registered] => 2017-03-25 19:14:08
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => asdf asdf
+        )
+
+    [ID] => 23
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:03:04 UTC] user meta data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:03:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => acustomer
+        )
+
+    [first_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [last_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[27-Mar-2017 15:03:04 UTC] user data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:03:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 47
+            [user_login] => brianbohl
+            [user_pass] => $P$BDe9rX9b8pQRilKwXIycOUUK5hR8uk0
+            [user_nicename] => brianbohl
+            [user_email] => imzsht7181@aol.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => brianbohl
+        )
+
+    [ID] => 47
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:03:04 UTC] user meta data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:03:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => brianbohl
+        )
+
+    [first_name] => Array
+        (
+            [0] => Brian
+        )
+
+    [last_name] => Array
+        (
+            [0] => Bohl
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 2
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:03:04 UTC] user data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:03:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 49
+            [user_login] => devondusseault
+            [user_pass] => $P$Bo8GXzFjEiZ9/9T5iQlOpeci/upVZX0
+            [user_nicename] => devondusseault
+            [user_email] => Dev5095@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:18
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => devondusseault
+        )
+
+    [ID] => 49
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:03:04 UTC] user meta data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:03:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => devondusseault
+        )
+
+    [first_name] => Array
+        (
+            [0] => Devon
+        )
+
+    [last_name] => Array
+        (
+            [0] => Dusseault
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => true
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:03:04 UTC] user data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:03:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 46
+            [user_login] => jameswillette
+            [user_pass] => $P$Bu2Y1Izq6vch/f9qKjlp1nGzRjTelD.
+            [user_nicename] => jameswillette
+            [user_email] => ddarko.willette@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => jameswillette
+        )
+
+    [ID] => 46
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:03:05 UTC] user meta data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:03:05 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => jameswillette
+        )
+
+    [first_name] => Array
+        (
+            [0] => James
+        )
+
+    [last_name] => Array
+        (
+            [0] => Willette
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:03:05 UTC] user data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:03:05 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 48
+            [user_login] => johnaverick
+            [user_pass] => $P$Brg2YjwoojwkKIw8oML5nrT6BSXA9z/
+            [user_nicename] => johnaverick
+            [user_email] => Patriotrights@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => johnaverick
+        )
+
+    [ID] => 48
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:03:05 UTC] user meta data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:03:05 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => johnaverick
+        )
+
+    [first_name] => Array
+        (
+            [0] => John
+        )
+
+    [last_name] => Array
+        (
+            [0] => Averick
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:03:05 UTC] user data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:03:05 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 45
+            [user_login] => kaylalamb
+            [user_pass] => $P$BfJ9eHBXz6hcoP88gb7CMDKXxFoW4e.
+            [user_nicename] => kaylalamb
+            [user_email] => kaylaglamlamb@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => kaylalamb
+        )
+
+    [ID] => 45
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:03:05 UTC] user meta data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:03:05 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => kaylalamb
+        )
+
+    [first_name] => Array
+        (
+            [0] => Kayla
+        )
+
+    [last_name] => Array
+        (
+            [0] => Lamb
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:04:04 UTC] user data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:04:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 23
+            [user_login] => acustomer
+            [user_pass] => $P$BLKvoZSqeiRiENxrdLlV86jL9wWKLz0
+            [user_nicename] => acustomer
+            [user_email] => acustomer@example.com
+            [user_url] => 
+            [user_registered] => 2017-03-25 19:14:08
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => asdf asdf
+        )
+
+    [ID] => 23
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:04:04 UTC] user meta data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:04:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => acustomer
+        )
+
+    [first_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [last_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[27-Mar-2017 15:04:04 UTC] user data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:04:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 47
+            [user_login] => brianbohl
+            [user_pass] => $P$BDe9rX9b8pQRilKwXIycOUUK5hR8uk0
+            [user_nicename] => brianbohl
+            [user_email] => imzsht7181@aol.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => brianbohl
+        )
+
+    [ID] => 47
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:04:04 UTC] user meta data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:04:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => brianbohl
+        )
+
+    [first_name] => Array
+        (
+            [0] => Brian
+        )
+
+    [last_name] => Array
+        (
+            [0] => Bohl
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 2
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:04:04 UTC] user data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:04:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 49
+            [user_login] => devondusseault
+            [user_pass] => $P$Bo8GXzFjEiZ9/9T5iQlOpeci/upVZX0
+            [user_nicename] => devondusseault
+            [user_email] => Dev5095@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:18
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => devondusseault
+        )
+
+    [ID] => 49
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:04:04 UTC] user meta data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:04:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => devondusseault
+        )
+
+    [first_name] => Array
+        (
+            [0] => Devon
+        )
+
+    [last_name] => Array
+        (
+            [0] => Dusseault
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => true
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:04:04 UTC] user data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:04:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 46
+            [user_login] => jameswillette
+            [user_pass] => $P$Bu2Y1Izq6vch/f9qKjlp1nGzRjTelD.
+            [user_nicename] => jameswillette
+            [user_email] => ddarko.willette@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => jameswillette
+        )
+
+    [ID] => 46
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:04:04 UTC] user meta data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:04:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => jameswillette
+        )
+
+    [first_name] => Array
+        (
+            [0] => James
+        )
+
+    [last_name] => Array
+        (
+            [0] => Willette
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:04:04 UTC] user data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:04:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 48
+            [user_login] => johnaverick
+            [user_pass] => $P$Brg2YjwoojwkKIw8oML5nrT6BSXA9z/
+            [user_nicename] => johnaverick
+            [user_email] => Patriotrights@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => johnaverick
+        )
+
+    [ID] => 48
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:04:04 UTC] user meta data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:04:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => johnaverick
+        )
+
+    [first_name] => Array
+        (
+            [0] => John
+        )
+
+    [last_name] => Array
+        (
+            [0] => Averick
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:04:04 UTC] user data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:04:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 45
+            [user_login] => kaylalamb
+            [user_pass] => $P$BfJ9eHBXz6hcoP88gb7CMDKXxFoW4e.
+            [user_nicename] => kaylalamb
+            [user_email] => kaylaglamlamb@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => kaylalamb
+        )
+
+    [ID] => 45
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:04:04 UTC] user meta data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:04:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => kaylalamb
+        )
+
+    [first_name] => Array
+        (
+            [0] => Kayla
+        )
+
+    [last_name] => Array
+        (
+            [0] => Lamb
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:06:08 UTC] user data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:06:08 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 23
+            [user_login] => acustomer
+            [user_pass] => $P$BLKvoZSqeiRiENxrdLlV86jL9wWKLz0
+            [user_nicename] => acustomer
+            [user_email] => acustomer@example.com
+            [user_url] => 
+            [user_registered] => 2017-03-25 19:14:08
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => asdf asdf
+        )
+
+    [ID] => 23
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:06:08 UTC] user meta data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:06:08 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => acustomer
+        )
+
+    [first_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [last_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[27-Mar-2017 15:06:08 UTC] user data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:06:08 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 47
+            [user_login] => brianbohl
+            [user_pass] => $P$BDe9rX9b8pQRilKwXIycOUUK5hR8uk0
+            [user_nicename] => brianbohl
+            [user_email] => imzsht7181@aol.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => brianbohl
+        )
+
+    [ID] => 47
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:06:08 UTC] user meta data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:06:08 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => brianbohl
+        )
+
+    [first_name] => Array
+        (
+            [0] => Brian
+        )
+
+    [last_name] => Array
+        (
+            [0] => Bohl
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 2
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:06:08 UTC] user data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:06:08 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 49
+            [user_login] => devondusseault
+            [user_pass] => $P$Bo8GXzFjEiZ9/9T5iQlOpeci/upVZX0
+            [user_nicename] => devondusseault
+            [user_email] => Dev5095@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:18
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => devondusseault
+        )
+
+    [ID] => 49
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:06:08 UTC] user meta data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:06:08 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => devondusseault
+        )
+
+    [first_name] => Array
+        (
+            [0] => Devon
+        )
+
+    [last_name] => Array
+        (
+            [0] => Dusseault
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => true
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:06:08 UTC] user data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:06:08 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 46
+            [user_login] => jameswillette
+            [user_pass] => $P$Bu2Y1Izq6vch/f9qKjlp1nGzRjTelD.
+            [user_nicename] => jameswillette
+            [user_email] => ddarko.willette@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => jameswillette
+        )
+
+    [ID] => 46
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:06:08 UTC] user meta data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:06:08 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => jameswillette
+        )
+
+    [first_name] => Array
+        (
+            [0] => James
+        )
+
+    [last_name] => Array
+        (
+            [0] => Willette
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:06:08 UTC] user data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:06:08 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 48
+            [user_login] => johnaverick
+            [user_pass] => $P$Brg2YjwoojwkKIw8oML5nrT6BSXA9z/
+            [user_nicename] => johnaverick
+            [user_email] => Patriotrights@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => johnaverick
+        )
+
+    [ID] => 48
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:06:08 UTC] user meta data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:06:08 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => johnaverick
+        )
+
+    [first_name] => Array
+        (
+            [0] => John
+        )
+
+    [last_name] => Array
+        (
+            [0] => Averick
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:06:08 UTC] user data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:06:08 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 45
+            [user_login] => kaylalamb
+            [user_pass] => $P$BfJ9eHBXz6hcoP88gb7CMDKXxFoW4e.
+            [user_nicename] => kaylalamb
+            [user_email] => kaylaglamlamb@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => kaylalamb
+        )
+
+    [ID] => 45
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:06:08 UTC] user meta data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:06:08 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => kaylalamb
+        )
+
+    [first_name] => Array
+        (
+            [0] => Kayla
+        )
+
+    [last_name] => Array
+        (
+            [0] => Lamb
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:07:04 UTC] user data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:07:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 23
+            [user_login] => acustomer
+            [user_pass] => $P$BLKvoZSqeiRiENxrdLlV86jL9wWKLz0
+            [user_nicename] => acustomer
+            [user_email] => acustomer@example.com
+            [user_url] => 
+            [user_registered] => 2017-03-25 19:14:08
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => asdf asdf
+        )
+
+    [ID] => 23
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:07:04 UTC] user meta data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:07:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => acustomer
+        )
+
+    [first_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [last_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[27-Mar-2017 15:07:04 UTC] user data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:07:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 47
+            [user_login] => brianbohl
+            [user_pass] => $P$BDe9rX9b8pQRilKwXIycOUUK5hR8uk0
+            [user_nicename] => brianbohl
+            [user_email] => imzsht7181@aol.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => brianbohl
+        )
+
+    [ID] => 47
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:07:04 UTC] user meta data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:07:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => brianbohl
+        )
+
+    [first_name] => Array
+        (
+            [0] => Brian
+        )
+
+    [last_name] => Array
+        (
+            [0] => Bohl
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 2
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:07:04 UTC] user data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:07:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 49
+            [user_login] => devondusseault
+            [user_pass] => $P$Bo8GXzFjEiZ9/9T5iQlOpeci/upVZX0
+            [user_nicename] => devondusseault
+            [user_email] => Dev5095@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:18
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => devondusseault
+        )
+
+    [ID] => 49
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:07:04 UTC] user meta data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:07:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => devondusseault
+        )
+
+    [first_name] => Array
+        (
+            [0] => Devon
+        )
+
+    [last_name] => Array
+        (
+            [0] => Dusseault
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => true
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:07:04 UTC] user data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:07:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 46
+            [user_login] => jameswillette
+            [user_pass] => $P$Bu2Y1Izq6vch/f9qKjlp1nGzRjTelD.
+            [user_nicename] => jameswillette
+            [user_email] => ddarko.willette@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => jameswillette
+        )
+
+    [ID] => 46
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:07:04 UTC] user meta data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:07:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => jameswillette
+        )
+
+    [first_name] => Array
+        (
+            [0] => James
+        )
+
+    [last_name] => Array
+        (
+            [0] => Willette
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:07:04 UTC] user data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:07:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 48
+            [user_login] => johnaverick
+            [user_pass] => $P$Brg2YjwoojwkKIw8oML5nrT6BSXA9z/
+            [user_nicename] => johnaverick
+            [user_email] => Patriotrights@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => johnaverick
+        )
+
+    [ID] => 48
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:07:04 UTC] user meta data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:07:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => johnaverick
+        )
+
+    [first_name] => Array
+        (
+            [0] => John
+        )
+
+    [last_name] => Array
+        (
+            [0] => Averick
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:07:04 UTC] user data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:07:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 45
+            [user_login] => kaylalamb
+            [user_pass] => $P$BfJ9eHBXz6hcoP88gb7CMDKXxFoW4e.
+            [user_nicename] => kaylalamb
+            [user_email] => kaylaglamlamb@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => kaylalamb
+        )
+
+    [ID] => 45
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:07:04 UTC] user meta data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:07:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => kaylalamb
+        )
+
+    [first_name] => Array
+        (
+            [0] => Kayla
+        )
+
+    [last_name] => Array
+        (
+            [0] => Lamb
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:08:04 UTC] user data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:08:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 23
+            [user_login] => acustomer
+            [user_pass] => $P$BLKvoZSqeiRiENxrdLlV86jL9wWKLz0
+            [user_nicename] => acustomer
+            [user_email] => acustomer@example.com
+            [user_url] => 
+            [user_registered] => 2017-03-25 19:14:08
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => asdf asdf
+        )
+
+    [ID] => 23
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:08:04 UTC] user meta data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:08:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => acustomer
+        )
+
+    [first_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [last_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[27-Mar-2017 15:08:04 UTC] user data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:08:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 47
+            [user_login] => brianbohl
+            [user_pass] => $P$BDe9rX9b8pQRilKwXIycOUUK5hR8uk0
+            [user_nicename] => brianbohl
+            [user_email] => imzsht7181@aol.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => brianbohl
+        )
+
+    [ID] => 47
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:08:04 UTC] user meta data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:08:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => brianbohl
+        )
+
+    [first_name] => Array
+        (
+            [0] => Brian
+        )
+
+    [last_name] => Array
+        (
+            [0] => Bohl
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 2
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:08:04 UTC] user data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:08:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 49
+            [user_login] => devondusseault
+            [user_pass] => $P$Bo8GXzFjEiZ9/9T5iQlOpeci/upVZX0
+            [user_nicename] => devondusseault
+            [user_email] => Dev5095@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:18
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => devondusseault
+        )
+
+    [ID] => 49
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:08:04 UTC] user meta data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:08:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => devondusseault
+        )
+
+    [first_name] => Array
+        (
+            [0] => Devon
+        )
+
+    [last_name] => Array
+        (
+            [0] => Dusseault
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => true
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:08:04 UTC] user data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:08:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 46
+            [user_login] => jameswillette
+            [user_pass] => $P$Bu2Y1Izq6vch/f9qKjlp1nGzRjTelD.
+            [user_nicename] => jameswillette
+            [user_email] => ddarko.willette@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => jameswillette
+        )
+
+    [ID] => 46
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:08:04 UTC] user meta data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:08:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => jameswillette
+        )
+
+    [first_name] => Array
+        (
+            [0] => James
+        )
+
+    [last_name] => Array
+        (
+            [0] => Willette
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:08:04 UTC] user data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:08:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 48
+            [user_login] => johnaverick
+            [user_pass] => $P$Brg2YjwoojwkKIw8oML5nrT6BSXA9z/
+            [user_nicename] => johnaverick
+            [user_email] => Patriotrights@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => johnaverick
+        )
+
+    [ID] => 48
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:08:04 UTC] user meta data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:08:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => johnaverick
+        )
+
+    [first_name] => Array
+        (
+            [0] => John
+        )
+
+    [last_name] => Array
+        (
+            [0] => Averick
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:08:04 UTC] user data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:08:04 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 45
+            [user_login] => kaylalamb
+            [user_pass] => $P$BfJ9eHBXz6hcoP88gb7CMDKXxFoW4e.
+            [user_nicename] => kaylalamb
+            [user_email] => kaylaglamlamb@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => kaylalamb
+        )
+
+    [ID] => 45
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:08:04 UTC] user meta data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:08:04 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => kaylalamb
+        )
+
+    [first_name] => Array
+        (
+            [0] => Kayla
+        )
+
+    [last_name] => Array
+        (
+            [0] => Lamb
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:09:22 UTC] user data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:09:22 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 23
+            [user_login] => acustomer
+            [user_pass] => $P$BLKvoZSqeiRiENxrdLlV86jL9wWKLz0
+            [user_nicename] => acustomer
+            [user_email] => acustomer@example.com
+            [user_url] => 
+            [user_registered] => 2017-03-25 19:14:08
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => asdf asdf
+        )
+
+    [ID] => 23
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:09:22 UTC] user meta data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:09:22 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => acustomer
+        )
+
+    [first_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [last_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[27-Mar-2017 15:09:22 UTC] user data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:09:22 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 47
+            [user_login] => brianbohl
+            [user_pass] => $P$BDe9rX9b8pQRilKwXIycOUUK5hR8uk0
+            [user_nicename] => brianbohl
+            [user_email] => imzsht7181@aol.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => brianbohl
+        )
+
+    [ID] => 47
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:09:22 UTC] user meta data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:09:22 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => brianbohl
+        )
+
+    [first_name] => Array
+        (
+            [0] => Brian
+        )
+
+    [last_name] => Array
+        (
+            [0] => Bohl
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 2
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:09:22 UTC] user data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:09:22 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 49
+            [user_login] => devondusseault
+            [user_pass] => $P$Bo8GXzFjEiZ9/9T5iQlOpeci/upVZX0
+            [user_nicename] => devondusseault
+            [user_email] => Dev5095@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:18
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => devondusseault
+        )
+
+    [ID] => 49
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:09:22 UTC] user meta data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:09:22 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => devondusseault
+        )
+
+    [first_name] => Array
+        (
+            [0] => Devon
+        )
+
+    [last_name] => Array
+        (
+            [0] => Dusseault
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => true
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:09:22 UTC] user data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:09:22 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 46
+            [user_login] => jameswillette
+            [user_pass] => $P$Bu2Y1Izq6vch/f9qKjlp1nGzRjTelD.
+            [user_nicename] => jameswillette
+            [user_email] => ddarko.willette@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => jameswillette
+        )
+
+    [ID] => 46
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:09:22 UTC] user meta data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:09:22 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => jameswillette
+        )
+
+    [first_name] => Array
+        (
+            [0] => James
+        )
+
+    [last_name] => Array
+        (
+            [0] => Willette
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:09:22 UTC] user data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:09:22 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 48
+            [user_login] => johnaverick
+            [user_pass] => $P$Brg2YjwoojwkKIw8oML5nrT6BSXA9z/
+            [user_nicename] => johnaverick
+            [user_email] => Patriotrights@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => johnaverick
+        )
+
+    [ID] => 48
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:09:22 UTC] user meta data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:09:22 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => johnaverick
+        )
+
+    [first_name] => Array
+        (
+            [0] => John
+        )
+
+    [last_name] => Array
+        (
+            [0] => Averick
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:09:22 UTC] user data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:09:22 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 45
+            [user_login] => kaylalamb
+            [user_pass] => $P$BfJ9eHBXz6hcoP88gb7CMDKXxFoW4e.
+            [user_nicename] => kaylalamb
+            [user_email] => kaylaglamlamb@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => kaylalamb
+        )
+
+    [ID] => 45
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:09:22 UTC] user meta data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:09:22 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => kaylalamb
+        )
+
+    [first_name] => Array
+        (
+            [0] => Kayla
+        )
+
+    [last_name] => Array
+        (
+            [0] => Lamb
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:10:21 UTC] user data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:10:21 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 23
+            [user_login] => acustomer
+            [user_pass] => $P$BLKvoZSqeiRiENxrdLlV86jL9wWKLz0
+            [user_nicename] => acustomer
+            [user_email] => acustomer@example.com
+            [user_url] => 
+            [user_registered] => 2017-03-25 19:14:08
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => asdf asdf
+        )
+
+    [ID] => 23
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:10:21 UTC] user meta data for customer 23 from jrwdev_show_user_meta
+[27-Mar-2017 15:10:21 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => acustomer
+        )
+
+    [first_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [last_name] => Array
+        (
+            [0] => asdf
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+)
+
+[27-Mar-2017 15:10:21 UTC] user data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:10:21 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 47
+            [user_login] => brianbohl
+            [user_pass] => $P$BDe9rX9b8pQRilKwXIycOUUK5hR8uk0
+            [user_nicename] => brianbohl
+            [user_email] => imzsht7181@aol.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => brianbohl
+        )
+
+    [ID] => 47
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:10:21 UTC] user meta data for customer 47 from jrwdev_show_user_meta
+[27-Mar-2017 15:10:21 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => brianbohl
+        )
+
+    [first_name] => Array
+        (
+            [0] => Brian
+        )
+
+    [last_name] => Array
+        (
+            [0] => Bohl
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 2
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:10:21 UTC] user data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:10:21 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 49
+            [user_login] => devondusseault
+            [user_pass] => $P$Bo8GXzFjEiZ9/9T5iQlOpeci/upVZX0
+            [user_nicename] => devondusseault
+            [user_email] => Dev5095@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:18
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => devondusseault
+        )
+
+    [ID] => 49
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:10:21 UTC] user meta data for customer 49 from jrwdev_show_user_meta
+[27-Mar-2017 15:10:21 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => devondusseault
+        )
+
+    [first_name] => Array
+        (
+            [0] => Devon
+        )
+
+    [last_name] => Array
+        (
+            [0] => Dusseault
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => true
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:10:21 UTC] user data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:10:21 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 46
+            [user_login] => jameswillette
+            [user_pass] => $P$Bu2Y1Izq6vch/f9qKjlp1nGzRjTelD.
+            [user_nicename] => jameswillette
+            [user_email] => ddarko.willette@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => jameswillette
+        )
+
+    [ID] => 46
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:10:21 UTC] user meta data for customer 46 from jrwdev_show_user_meta
+[27-Mar-2017 15:10:21 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => jameswillette
+        )
+
+    [first_name] => Array
+        (
+            [0] => James
+        )
+
+    [last_name] => Array
+        (
+            [0] => Willette
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+
+[27-Mar-2017 15:10:21 UTC] user data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:10:21 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 48
+            [user_login] => johnaverick
+            [user_pass] => $P$Brg2YjwoojwkKIw8oML5nrT6BSXA9z/
+            [user_nicename] => johnaverick
+            [user_email] => Patriotrights@yahoo.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => johnaverick
+        )
+
+    [ID] => 48
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:10:21 UTC] user meta data for customer 48 from jrwdev_show_user_meta
+[27-Mar-2017 15:10:21 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => johnaverick
+        )
+
+    [first_name] => Array
+        (
+            [0] => John
+        )
+
+    [last_name] => Array
+        (
+            [0] => Averick
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626758
+        )
+
+)
+
+[27-Mar-2017 15:10:21 UTC] user data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:10:21 UTC] WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 45
+            [user_login] => kaylalamb
+            [user_pass] => $P$BfJ9eHBXz6hcoP88gb7CMDKXxFoW4e.
+            [user_nicename] => kaylalamb
+            [user_email] => kaylaglamlamb@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-03-27 14:59:17
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => kaylalamb
+        )
+
+    [ID] => 45
+    [caps] => Array
+        (
+            [customer] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => customer
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [customer] => 1
+        )
+
+    [filter] => 
+)
+
+[27-Mar-2017 15:10:21 UTC] user meta data for customer 45 from jrwdev_show_user_meta
+[27-Mar-2017 15:10:21 UTC] Array
+(
+    [nickname] => Array
+        (
+            [0] => kaylalamb
+        )
+
+    [first_name] => Array
+        (
+            [0] => Kayla
+        )
+
+    [last_name] => Array
+        (
+            [0] => Lamb
+        )
+
+    [description] => Array
+        (
+            [0] => 
+        )
+
+    [rich_editing] => Array
+        (
+            [0] => true
+        )
+
+    [comment_shortcuts] => Array
+        (
+            [0] => false
+        )
+
+    [admin_color] => Array
+        (
+            [0] => fresh
+        )
+
+    [use_ssl] => Array
+        (
+            [0] => 0
+        )
+
+    [show_admin_bar_front] => Array
+        (
+            [0] => true
+        )
+
+    [locale] => Array
+        (
+            [0] => 
+        )
+
+    [wp_capabilities] => Array
+        (
+            [0] => a:1:{s:8:"customer";b:1;}
+        )
+
+    [wp_user_level] => Array
+        (
+            [0] => 0
+        )
+
+    [customer_id] => Array
+        (
+            [0] => 1
+        )
+
+    [latest_customer] => Array
+        (
+            [0] => false
+        )
+
+    [company] => Array
+        (
+            [0] => 
+        )
+
+    [phone] => Array
+        (
+            [0] => 0
+        )
+
+    [notes] => Array
+        (
+            [0] => 
+        )
+
+    [customer_group] => Array
+        (
+            [0] => 
+        )
+
+    [dismissed_wp_pointers] => Array
+        (
+            [0] => 
+        )
+
+    [last_update] => Array
+        (
+            [0] => 1490626757
+        )
+
+)
+

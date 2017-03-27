@@ -1,0 +1,43 @@
+This is what we want our jrwdev_filter_default_mappings function to output
+
+
+[23-Mar-2017 15:09:39 UTC] THIS IS $mapping_options FROM importer; this is the goal
+[23-Mar-2017 15:09:39 UTC] Array
+(
+    [User data] => Array
+        (
+            [id] => User ID
+            [username] => Username
+            [email] => Email
+            [password] => Password
+            [date_registered] => Registered date
+            [role] => Role
+            [url] => URL
+        )
+
+    [Customer data] => Array
+        (
+            [billing_first_name] => Billing: First name
+            [billing_last_name] => Billing: Last name
+            [billing_company] => Billing: Company
+            [billing_address_1] => Billing: Address 1
+            [billing_address_2] => Billing: Address 2
+            [billing_city] => Billing: City
+            [billing_state] => Billing: State
+            [billing_postcode] => Billing: Postcode
+            [billing_country] => Billing: Country
+            [billing_email] => Billing: Email
+            [billing_phone] => Billing: Phone
+            [shipping_first_name] => Shipping: First name
+            [shipping_last_name] => Shipping: Last name
+            [shipping_company] => Shipping: Company
+            [shipping_address_1] => Shipping: Address 1
+            [shipping_address_2] => Shipping: Address 2
+            [shipping_city] => Shipping: City
+            [shipping_state] => Shipping: State
+            [shipping_postcode] => Shipping: Postcode
+            [shipping_country] => Shipping: Country
+            [paying_customer] => Paying customer
+        )
+
+)
