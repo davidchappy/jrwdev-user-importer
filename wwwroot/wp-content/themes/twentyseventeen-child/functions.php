@@ -66,11 +66,14 @@ function jrwdev_add_custom_username( $data, $options, $this ) {
 add_filter( 'user_register', 'jrwdev_add_additional_customer_fields', 10, 3 );
 function jrwdev_add_additional_customer_fields( $user_id ) {
     $user = get_userdata( $user_id );
+    $user_meta = get_user_meta($user_id);
+
+    write_log("Checking user meta in user_register; expect nothing b/c user is not yet created");
+    write_log($user_meta);
+
     if( count($user) > 0 && in_array('customer', $user->roles) ) {
         // write_log("Add meta fields to a customer...");
-        $user_meta = get_user_meta($user_id);
-        write_log("Checking user meta in user_register; expect nothing b/c user is not yet created");
-        write_log($user_meta);
+        // $user_meta = get_user_meta($user_id);
 
         // CUSTOMER_ID
         // If not an imported customer, use the incremented customer_id funcdtion
@@ -298,15 +301,14 @@ function jrwdev_manage_imported_data( $user, $item, $options, $raw_headers ) {
     // write_log('user $raw_headers jrwdev_manage_imported_data');
     // write_log($raw_headers);
 
-    $user_meta = $user['user_meta'];
-    $user_meta['customer_id']               = $item['customer_id'];
-    $user_meta['company']                   = $item['company'];
-    $user_meta['phone']                     = $item['phone'];
-    $user_meta['notes']                     = $item['notes'];
-    $user_meta['customer_group']            = $item['customer_group'];
-    $user_meta['date_joined']               = $item['date_joined'];
-    $user_meta['receive_marketing_emails']  = $item['receive_marketing_emails'];
-    $user_meta['tax_exempt_category']       = $item['tax_exempt_category'];
+    $user['user_meta']['customer_id']               = $item['customer_id'];
+    $user['user_meta']['company']                   = $item['company'];
+    $user['user_meta']['phone']                     = $item['phone'];
+    $user['user_meta']['notes']                     = $item['notes'];
+    $user['user_meta']['customer_group']            = $item['customer_group'];
+    $user['user_meta']['date_joined']               = $item['date_joined'];
+    $user['user_meta']['receive_marketing_emails']  = $item['receive_marketing_emails'];
+    $user['user_meta']['tax_exempt_category']       = $item['tax_exempt_category'];
 
     $store_credit = $item['store_credit'];
     if( floatval($store_credit) > 0 ) {
@@ -378,7 +380,7 @@ function jrwdev_user_data_testing() {
 
 
 // ** Short cut link to csv import field mapping 
-// http://wp-wads-user-importer.dev/wp-admin/admin.php?import=woocommerce_customer_csv&step=3&file=%2FUsers%2Fdavidchappy%2FGoogleDrive%2FCode%2Fhtdocs%2Fsites%2Fwp-wads-user-importer%2Fwwwroot%2Fwp-content%2Fuploads%2F2017%2F03%2FGoal-Csv-Table-1-numberexport.csv.txt&options%5Binsert_non_matching%5D=1&options%5Bdelimiter%5D=%2C
+// http://wp-wads-user-importer.dev/wp-admin/admin.php?import=woocommerce_customer_csv&step=3&file=%2FUsers%2Fdavidchappy%2FGoogleDrive%2FCode%2Fhtdocs%2Fsites%2Fwp-wads-user-importer%2Fwwwroot%2Fwp-content%2Fuploads%2F2017%2F03%2FGoal-Csv-Table-1.csv-4.txt&options%5Binsert_non_matching%5D=1&options%5Bdelimiter%5D=%2C
 
 // logging to debug.log
 if (!function_exists('write_log')) {
