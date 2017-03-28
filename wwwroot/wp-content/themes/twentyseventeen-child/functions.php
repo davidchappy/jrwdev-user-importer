@@ -159,10 +159,10 @@ function add_incremented_customer_id( $user ) {
 // 
 
 // Show extra fields on the user profile page
-add_action( 'show_user_profile', 'my_show_extra_profile_fields' );
-add_action( 'edit_user_profile', 'my_show_extra_profile_fields' );
+add_action( 'show_user_profile', 'jrwdev_show_extra_profile_fields' );
+add_action( 'edit_user_profile', 'jrwdev_show_extra_profile_fields' );
 
-function my_show_extra_profile_fields( $user ) { ?>
+function jrwdev_show_extra_profile_fields( $user ) { ?>
 
     <h3>Extra profile information</h3>
 
@@ -330,19 +330,60 @@ function add_imported_csv_addresses( $user, $raw_addresses ) {
         
         foreach($address_elements as $address_element) {
 
+            // Separate and clean up address fields and values
             list($raw_field, $raw_value) = explode(":", $address_element);
             $field = strtolower(str_replace(" ", "_", trim($raw_field))); 
-            $value = trim($raw_value); 
-            $billing_field = "billing_" . $field;
-            $shipping_field = "shipping_" . $field;
+            $value = trim($raw_value);
 
-            if($i === 0) {
-                $user['billing_address'][$billing_field] = $value;
-                $user['shipping_address'][$shipping_field] = $value;
-            } else {
-                $adjusted_i = $i - 1;
-                $other_shipping_addresses[$adjusted_i][$shipping_field] = $value;
+            // Remove unnecessary "address_" prefix
+            if( strpos( $field, 'address_' ) !== false ) {
+                if( 'address_id' != $field ) {
+                    $field = str_replace( 'address_', '', $field );
+                }
             }
+
+            // Translate field names to WC API
+            switch($field) {
+
+                case 'line_1':
+                    $field = 'address_1';
+                    break;
+                case 'line_2':
+                    $field = 'address_2';
+                    break;
+                case 'city/suburb':
+                    $field = 'city';
+                    break;
+                case 'state/province':
+                    $field = 'state';
+                    break;
+                case 'state_abbreviation':
+                    $field = 'state';
+                    break;
+                case 'zip/postcode':
+                    $field = 'postcode';
+                    break;
+
+            }
+
+            // Translate value names to WC API
+            switch($value) {
+
+                case 'United States':
+                    $value = 'US';
+                    break;
+            }
+
+
+            // If first address in list, set as both billing and shipping
+            if($i === 0) {
+                $user['billing_address'][$field] = $value;
+                $user['shipping_address'][$field] = $value;
+            } else {
+                // Add additional addresses to meta data per WC api
+                $adjusted_i = $i - 1;
+                $other_shipping_addresses[$adjusted_i][$field] = $value;
+            } 
 
         }
     }
@@ -383,9 +424,6 @@ function create_store_credit_coupon( $email, $amount ) {
 
     return $coupon_code;
 }
-
-
-
 
 
 //
