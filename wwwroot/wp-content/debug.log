@@ -1,1579 +1,358 @@
-[27-Mar-2017 15:25:46 UTC] user data for customer 72 from jrwdev_show_user_meta
-[27-Mar-2017 15:25:46 UTC] WP_User Object
+[28-Mar-2017 13:30:31 UTC] Checking Array after add_imported_csv_addresses function
+[28-Mar-2017 13:30:31 UTC] Array
 (
-    [data] => stdClass Object
+    [email] => samplecustomer1@gmail.com
+    [username] => samplecustomer1@gmail.com
+    [first_name] => Kayla
+    [last_name] => Lamb
+    [shipping_address] => Array
         (
-            [ID] => 72
-            [user_login] => brianbohl
-            [user_pass] => $P$Bvg4ejSFMrFOIiK5SOLk8MxUA/KwIK.
-            [user_nicename] => brianbohl
-            [user_email] => samplecustomer3@aol.com
-            [user_url] => 
-            [user_registered] => 2017-03-27 15:25:15
-            [user_activation_key] => 
-            [user_status] => 0
-            [display_name] => brianbohl
+            [shipping_address_id] => 34228
+            [shipping_address_name] => Kayla Lamb
+            [shipping_address_first_name] => Kayla
+            [shipping_address_last_name] => Lamb
+            [shipping_address_company] => 1991
+            [shipping_address_line_1] => 116 Creekpark
+            [shipping_address_line_2] => 
+            [shipping_city/suburb] => Floresville
+            [shipping_state/province] => Texas
+            [shipping_state_abbreviation] => TX
+            [shipping_zip/postcode] => 78114
+            [shipping_country] => United States
+            [shipping_building_type] => residential
+            [shipping_address_phone] => 2107256029
         )
 
-    [ID] => 72
-    [caps] => Array
+    [billing_address] => Array
         (
-            [customer] => 1
+            [billing_address_id] => 34228
+            [billing_address_name] => Kayla Lamb
+            [billing_address_first_name] => Kayla
+            [billing_address_last_name] => Lamb
+            [billing_address_company] => 1991
+            [billing_address_line_1] => 116 Creekpark
+            [billing_address_line_2] => 
+            [billing_city/suburb] => Floresville
+            [billing_state/province] => Texas
+            [billing_state_abbreviation] => TX
+            [billing_zip/postcode] => 78114
+            [billing_country] => United States
+            [billing_building_type] => residential
+            [billing_address_phone] => 2107256029
         )
 
-    [cap_key] => wp_capabilities
-    [roles] => Array
+    [user_meta] => Array
         (
-            [0] => customer
-        )
+            [customer_id] => 30478
+            [company] => 1991
+            [phone] => 2107256029
+            [notes] => 
+            [customer_group] => RETAIL
+            [date_joined] => 03/15/2017
+            [receive_marketing_emails] => 1
+            [tax_exempt_category] => 
+            [wc_other_addresses] => Array
+                (
+                    [0] => Array
+                        (
+                            [shipping_address_id] => 34229
+                            [shipping_address_name] => Kayla Lamb
+                            [shipping_address_first_name] => Kayla
+                            [shipping_address_last_name] => Lamb
+                            [shipping_address_company] => 
+                            [shipping_address_line_1] => 15103 SPRING GLN
+                            [shipping_address_line_2] => 
+                            [shipping_city/suburb] => San Antonio
+                            [shipping_state/province] => Texas
+                            [shipping_state_abbreviation] => TX
+                            [shipping_zip/postcode] => 78247
+                            [shipping_country] => United States
+                            [shipping_building_type] => residential
+                            [shipping_address_phone] => 2107256029
+                        )
 
-    [allcaps] => Array
-        (
-            [read] => 1
-            [customer] => 1
-        )
+                    [1] => Array
+                        (
+                            [shipping_address_id] => 34230
+                            [shipping_address_name] => Kayla Lamb
+                            [shipping_address_first_name] => Kayla
+                            [shipping_address_last_name] => Lamb
+                            [shipping_address_company] => 1991
+                            [shipping_address_line_1] => 116 Creekpark Drive
+                            [shipping_address_line_2] => 
+                            [shipping_city/suburb] => Floresville
+                            [shipping_state/province] => Texas
+                            [shipping_state_abbreviation] => TX
+                            [shipping_zip/postcode] => 78114
+                            [shipping_country] => United States
+                            [shipping_building_type] => residential
+                            [shipping_address_phone] => 2107256029
+                        )
 
-    [filter] => 
-)
+                )
 
-[27-Mar-2017 15:25:46 UTC] user meta data for customer 72 from jrwdev_show_user_meta
-[27-Mar-2017 15:25:46 UTC] Array
-(
-    [nickname] => Array
-        (
-            [0] => brianbohl
-        )
-
-    [first_name] => Array
-        (
-            [0] => Brian
-        )
-
-    [last_name] => Array
-        (
-            [0] => Bohl
-        )
-
-    [description] => Array
-        (
-            [0] => 
-        )
-
-    [rich_editing] => Array
-        (
-            [0] => true
-        )
-
-    [comment_shortcuts] => Array
-        (
-            [0] => false
-        )
-
-    [admin_color] => Array
-        (
-            [0] => fresh
-        )
-
-    [use_ssl] => Array
-        (
-            [0] => 0
-        )
-
-    [show_admin_bar_front] => Array
-        (
-            [0] => true
-        )
-
-    [locale] => Array
-        (
-            [0] => 
-        )
-
-    [wp_capabilities] => Array
-        (
-            [0] => a:1:{s:8:"customer";b:1;}
-        )
-
-    [wp_user_level] => Array
-        (
-            [0] => 0
-        )
-
-    [customer_id] => Array
-        (
-            [0] => 30480
-        )
-
-    [latest_customer] => Array
-        (
-            [0] => false
-        )
-
-    [company] => Array
-        (
-            [0] => 
-        )
-
-    [phone] => Array
-        (
-            [0] => 7074306779
-        )
-
-    [notes] => Array
-        (
-            [0] => 
-        )
-
-    [customer_group] => Array
-        (
-            [0] => RETAIL
-        )
-
-    [dismissed_wp_pointers] => Array
-        (
-            [0] => 
-        )
-
-    [last_update] => Array
-        (
-            [0] => 1490628315
-        )
-
-    [date_joined] => Array
-        (
-            [0] => 03/15/2017
-        )
-
-    [receive_marketing_emails] => Array
-        (
-            [0] => 1
-        )
-
-    [tax_exempt_category] => Array
-        (
-            [0] => 
         )
 
 )
 
-[27-Mar-2017 15:25:46 UTC] user data for customer 74 from jrwdev_show_user_meta
-[27-Mar-2017 15:25:46 UTC] WP_User Object
+[28-Mar-2017 13:30:31 UTC] Checking Array after add_imported_csv_addresses function
+[28-Mar-2017 13:30:31 UTC] Array
 (
-    [data] => stdClass Object
+    [email] => samplecustomer2@gmail.com
+    [username] => samplecustomer2@gmail.com
+    [first_name] => James
+    [last_name] => Willette
+    [shipping_address] => Array
         (
-            [ID] => 74
-            [user_login] => devondusseault
-            [user_pass] => $P$B3HpgEL4ptM2kllsEXPYAVD6D2kmiW/
-            [user_nicename] => devondusseault
-            [user_email] => samplecustomer5@yahoo.com
-            [user_url] => 
-            [user_registered] => 2017-03-27 15:25:15
-            [user_activation_key] => 
-            [user_status] => 0
-            [display_name] => devondusseault
+            [shipping_address_id] => 34231
+            [shipping_address_name] => James Willette
+            [shipping_address_first_name] => James
+            [shipping_address_last_name] => Willette
+            [shipping_address_company] => 
+            [shipping_address_line_1] => 48 Branch St
+            [shipping_address_line_2] => Apt 3
+            [shipping_city/suburb] => Pawtucket
+            [shipping_state/province] => Rhode Island
+            [shipping_state_abbreviation] => RI
+            [shipping_zip/postcode] => 02860
+            [shipping_country] => United States
+            [shipping_building_type] => residential
+            [shipping_address_phone] => 4013322305
         )
 
-    [ID] => 74
-    [caps] => Array
+    [billing_address] => Array
         (
-            [customer] => 1
+            [billing_address_id] => 34231
+            [billing_address_name] => James Willette
+            [billing_address_first_name] => James
+            [billing_address_last_name] => Willette
+            [billing_address_company] => 
+            [billing_address_line_1] => 48 Branch St
+            [billing_address_line_2] => Apt 3
+            [billing_city/suburb] => Pawtucket
+            [billing_state/province] => Rhode Island
+            [billing_state_abbreviation] => RI
+            [billing_zip/postcode] => 02860
+            [billing_country] => United States
+            [billing_building_type] => residential
+            [billing_address_phone] => 4013322305
         )
 
-    [cap_key] => wp_capabilities
-    [roles] => Array
+    [user_meta] => Array
         (
-            [0] => customer
-        )
+            [customer_id] => 30479
+            [company] => 
+            [phone] => 4013322305
+            [notes] => 
+            [customer_group] => RETAIL
+            [date_joined] => 03/15/2017
+            [receive_marketing_emails] => 1
+            [tax_exempt_category] => 
+            [wc_other_addresses] => Array
+                (
+                )
 
-    [allcaps] => Array
-        (
-            [read] => 1
-            [customer] => 1
-        )
-
-    [filter] => 
-)
-
-[27-Mar-2017 15:25:46 UTC] user meta data for customer 74 from jrwdev_show_user_meta
-[27-Mar-2017 15:25:46 UTC] Array
-(
-    [nickname] => Array
-        (
-            [0] => devondusseault
-        )
-
-    [first_name] => Array
-        (
-            [0] => Devon
-        )
-
-    [last_name] => Array
-        (
-            [0] => Dusseault
-        )
-
-    [description] => Array
-        (
-            [0] => 
-        )
-
-    [rich_editing] => Array
-        (
-            [0] => true
-        )
-
-    [comment_shortcuts] => Array
-        (
-            [0] => false
-        )
-
-    [admin_color] => Array
-        (
-            [0] => fresh
-        )
-
-    [use_ssl] => Array
-        (
-            [0] => 0
-        )
-
-    [show_admin_bar_front] => Array
-        (
-            [0] => true
-        )
-
-    [locale] => Array
-        (
-            [0] => 
-        )
-
-    [wp_capabilities] => Array
-        (
-            [0] => a:1:{s:8:"customer";b:1;}
-        )
-
-    [wp_user_level] => Array
-        (
-            [0] => 0
-        )
-
-    [customer_id] => Array
-        (
-            [0] => 30482
-        )
-
-    [latest_customer] => Array
-        (
-            [0] => true
-        )
-
-    [company] => Array
-        (
-            [0] => 
-        )
-
-    [phone] => Array
-        (
-            [0] => 8606349216
-        )
-
-    [notes] => Array
-        (
-            [0] => 
-        )
-
-    [customer_group] => Array
-        (
-            [0] => RETAIL
-        )
-
-    [dismissed_wp_pointers] => Array
-        (
-            [0] => 
-        )
-
-    [last_update] => Array
-        (
-            [0] => 1490628315
-        )
-
-    [date_joined] => Array
-        (
-            [0] => 03/15/2017
-        )
-
-    [receive_marketing_emails] => Array
-        (
-            [0] => 1
-        )
-
-    [tax_exempt_category] => Array
-        (
-            [0] => 
         )
 
 )
 
-[27-Mar-2017 15:25:46 UTC] user data for customer 71 from jrwdev_show_user_meta
-[27-Mar-2017 15:25:46 UTC] WP_User Object
+[28-Mar-2017 13:30:31 UTC] Checking Array after add_imported_csv_addresses function
+[28-Mar-2017 13:30:31 UTC] Array
 (
-    [data] => stdClass Object
+    [email] => samplecustomer3@aol.com
+    [username] => samplecustomer3@aol.com
+    [first_name] => Brian
+    [last_name] => Bohl
+    [shipping_address] => Array
         (
-            [ID] => 71
-            [user_login] => jameswillette
-            [user_pass] => $P$BvNTOPLUmZ6EQphQ7t6ET9licNPr.y1
-            [user_nicename] => jameswillette
-            [user_email] => samplecustomer2@gmail.com
-            [user_url] => 
-            [user_registered] => 2017-03-27 15:25:15
-            [user_activation_key] => 
-            [user_status] => 0
-            [display_name] => jameswillette
+            [shipping_address_id] => 34232
+            [shipping_address_name] => Brian Bohl
+            [shipping_address_first_name] => Brian
+            [shipping_address_last_name] => Bohl
+            [shipping_address_company] => 
+            [shipping_address_line_1] => 1881 Walters Court STE C
+            [shipping_address_line_2] => 
+            [shipping_city/suburb] => Fairfield
+            [shipping_state/province] => California
+            [shipping_state_abbreviation] => CA
+            [shipping_zip/postcode] => 94533
+            [shipping_country] => United States
+            [shipping_building_type] => residential
+            [shipping_address_phone] => 7074306779
         )
 
-    [ID] => 71
-    [caps] => Array
+    [billing_address] => Array
         (
-            [customer] => 1
+            [billing_address_id] => 34232
+            [billing_address_name] => Brian Bohl
+            [billing_address_first_name] => Brian
+            [billing_address_last_name] => Bohl
+            [billing_address_company] => 
+            [billing_address_line_1] => 1881 Walters Court STE C
+            [billing_address_line_2] => 
+            [billing_city/suburb] => Fairfield
+            [billing_state/province] => California
+            [billing_state_abbreviation] => CA
+            [billing_zip/postcode] => 94533
+            [billing_country] => United States
+            [billing_building_type] => residential
+            [billing_address_phone] => 7074306779
         )
 
-    [cap_key] => wp_capabilities
-    [roles] => Array
+    [user_meta] => Array
         (
-            [0] => customer
-        )
+            [customer_id] => 30480
+            [company] => 
+            [phone] => 7074306779
+            [notes] => 
+            [customer_group] => RETAIL
+            [date_joined] => 03/15/2017
+            [receive_marketing_emails] => 1
+            [tax_exempt_category] => 
+            [wc_other_addresses] => Array
+                (
+                    [0] => Array
+                        (
+                            [shipping_address_id] => 34233
+                            [shipping_address_name] => Brian Bohl
+                            [shipping_address_first_name] => Brian
+                            [shipping_address_last_name] => Bohl
+                            [shipping_address_company] => 
+                            [shipping_address_line_1] => 5000 Lynbrook Drive
+                            [shipping_address_line_2] => 
+                            [shipping_city/suburb] => Fairfield
+                            [shipping_state/province] => California
+                            [shipping_state_abbreviation] => CA
+                            [shipping_zip/postcode] => 94534
+                            [shipping_country] => United States
+                            [shipping_building_type] => residential
+                            [shipping_address_phone] => 7074306779
+                        )
 
-    [allcaps] => Array
-        (
-            [read] => 1
-            [customer] => 1
-        )
+                )
 
-    [filter] => 
-)
-
-[27-Mar-2017 15:25:46 UTC] user meta data for customer 71 from jrwdev_show_user_meta
-[27-Mar-2017 15:25:46 UTC] Array
-(
-    [nickname] => Array
-        (
-            [0] => jameswillette
-        )
-
-    [first_name] => Array
-        (
-            [0] => James
-        )
-
-    [last_name] => Array
-        (
-            [0] => Willette
-        )
-
-    [description] => Array
-        (
-            [0] => 
-        )
-
-    [rich_editing] => Array
-        (
-            [0] => true
-        )
-
-    [comment_shortcuts] => Array
-        (
-            [0] => false
-        )
-
-    [admin_color] => Array
-        (
-            [0] => fresh
-        )
-
-    [use_ssl] => Array
-        (
-            [0] => 0
-        )
-
-    [show_admin_bar_front] => Array
-        (
-            [0] => true
-        )
-
-    [locale] => Array
-        (
-            [0] => 
-        )
-
-    [wp_capabilities] => Array
-        (
-            [0] => a:1:{s:8:"customer";b:1;}
-        )
-
-    [wp_user_level] => Array
-        (
-            [0] => 0
-        )
-
-    [customer_id] => Array
-        (
-            [0] => 30479
-        )
-
-    [latest_customer] => Array
-        (
-            [0] => false
-        )
-
-    [company] => Array
-        (
-            [0] => 
-        )
-
-    [phone] => Array
-        (
-            [0] => 4013322305
-        )
-
-    [notes] => Array
-        (
-            [0] => 
-        )
-
-    [customer_group] => Array
-        (
-            [0] => RETAIL
-        )
-
-    [dismissed_wp_pointers] => Array
-        (
-            [0] => 
-        )
-
-    [last_update] => Array
-        (
-            [0] => 1490628315
-        )
-
-    [date_joined] => Array
-        (
-            [0] => 03/15/2017
-        )
-
-    [receive_marketing_emails] => Array
-        (
-            [0] => 1
-        )
-
-    [tax_exempt_category] => Array
-        (
-            [0] => 
         )
 
 )
 
-[27-Mar-2017 15:25:46 UTC] user data for customer 73 from jrwdev_show_user_meta
-[27-Mar-2017 15:25:46 UTC] WP_User Object
+[28-Mar-2017 13:30:31 UTC] Checking Array after add_imported_csv_addresses function
+[28-Mar-2017 13:30:31 UTC] Array
 (
-    [data] => stdClass Object
+    [email] => samplecustomer4@yahoo.com
+    [username] => samplecustomer4@yahoo.com
+    [first_name] => John
+    [last_name] => Averick
+    [shipping_address] => Array
         (
-            [ID] => 73
-            [user_login] => johnaverick
-            [user_pass] => $P$BebW1X/ksu5/RXvMDTA.JGadTroJOJ/
-            [user_nicename] => johnaverick
-            [user_email] => samplecustomer4@yahoo.com
-            [user_url] => 
-            [user_registered] => 2017-03-27 15:25:15
-            [user_activation_key] => 
-            [user_status] => 0
-            [display_name] => johnaverick
+            [shipping_address_id] => 34234
+            [shipping_address_name] => John Averick
+            [shipping_address_first_name] => John
+            [shipping_address_last_name] => Averick
+            [shipping_address_company] => 
+            [shipping_address_line_1] => 2075 S.W. 186 ct.
+            [shipping_address_line_2] => 
+            [shipping_city/suburb] => Dunnellon
+            [shipping_state/province] => Florida
+            [shipping_state_abbreviation] => FL
+            [shipping_zip/postcode] => 34432
+            [shipping_country] => United States
+            [shipping_building_type] => residential
+            [shipping_address_phone] => 352-489-3589
         )
 
-    [ID] => 73
-    [caps] => Array
+    [billing_address] => Array
         (
-            [customer] => 1
+            [billing_address_id] => 34234
+            [billing_address_name] => John Averick
+            [billing_address_first_name] => John
+            [billing_address_last_name] => Averick
+            [billing_address_company] => 
+            [billing_address_line_1] => 2075 S.W. 186 ct.
+            [billing_address_line_2] => 
+            [billing_city/suburb] => Dunnellon
+            [billing_state/province] => Florida
+            [billing_state_abbreviation] => FL
+            [billing_zip/postcode] => 34432
+            [billing_country] => United States
+            [billing_building_type] => residential
+            [billing_address_phone] => 352-489-3589
         )
 
-    [cap_key] => wp_capabilities
-    [roles] => Array
+    [user_meta] => Array
         (
-            [0] => customer
-        )
+            [customer_id] => 30481
+            [company] => 
+            [phone] => 352-489-3589
+            [notes] => 
+            [customer_group] => RETAIL
+            [date_joined] => 03/15/2017
+            [receive_marketing_emails] => 1
+            [tax_exempt_category] => 
+            [wc_other_addresses] => Array
+                (
+                )
 
-    [allcaps] => Array
-        (
-            [read] => 1
-            [customer] => 1
-        )
-
-    [filter] => 
-)
-
-[27-Mar-2017 15:25:46 UTC] user meta data for customer 73 from jrwdev_show_user_meta
-[27-Mar-2017 15:25:46 UTC] Array
-(
-    [nickname] => Array
-        (
-            [0] => johnaverick
-        )
-
-    [first_name] => Array
-        (
-            [0] => John
-        )
-
-    [last_name] => Array
-        (
-            [0] => Averick
-        )
-
-    [description] => Array
-        (
-            [0] => 
-        )
-
-    [rich_editing] => Array
-        (
-            [0] => true
-        )
-
-    [comment_shortcuts] => Array
-        (
-            [0] => false
-        )
-
-    [admin_color] => Array
-        (
-            [0] => fresh
-        )
-
-    [use_ssl] => Array
-        (
-            [0] => 0
-        )
-
-    [show_admin_bar_front] => Array
-        (
-            [0] => true
-        )
-
-    [locale] => Array
-        (
-            [0] => 
-        )
-
-    [wp_capabilities] => Array
-        (
-            [0] => a:1:{s:8:"customer";b:1;}
-        )
-
-    [wp_user_level] => Array
-        (
-            [0] => 0
-        )
-
-    [customer_id] => Array
-        (
-            [0] => 30481
-        )
-
-    [latest_customer] => Array
-        (
-            [0] => false
-        )
-
-    [company] => Array
-        (
-            [0] => 
-        )
-
-    [phone] => Array
-        (
-            [0] => 352-489-3589
-        )
-
-    [notes] => Array
-        (
-            [0] => 
-        )
-
-    [customer_group] => Array
-        (
-            [0] => RETAIL
-        )
-
-    [dismissed_wp_pointers] => Array
-        (
-            [0] => 
-        )
-
-    [last_update] => Array
-        (
-            [0] => 1490628315
-        )
-
-    [date_joined] => Array
-        (
-            [0] => 03/15/2017
-        )
-
-    [receive_marketing_emails] => Array
-        (
-            [0] => 1
-        )
-
-    [tax_exempt_category] => Array
-        (
-            [0] => 
         )
 
 )
 
-[27-Mar-2017 15:25:46 UTC] user data for customer 70 from jrwdev_show_user_meta
-[27-Mar-2017 15:25:46 UTC] WP_User Object
+[28-Mar-2017 13:30:31 UTC] Checking Array after add_imported_csv_addresses function
+[28-Mar-2017 13:30:31 UTC] Array
 (
-    [data] => stdClass Object
-        (
-            [ID] => 70
-            [user_login] => kaylalamb
-            [user_pass] => $P$BG0Gy5QzBJrV.JEKrFohlJbt/yqUQ0/
-            [user_nicename] => kaylalamb
-            [user_email] => samplecustomer1@gmail.com
-            [user_url] => 
-            [user_registered] => 2017-03-27 15:25:15
-            [user_activation_key] => 
-            [user_status] => 0
-            [display_name] => kaylalamb
-        )
-
-    [ID] => 70
-    [caps] => Array
-        (
-            [customer] => 1
-        )
-
-    [cap_key] => wp_capabilities
-    [roles] => Array
-        (
-            [0] => customer
-        )
-
-    [allcaps] => Array
-        (
-            [read] => 1
-            [customer] => 1
-        )
-
-    [filter] => 
-)
-
-[27-Mar-2017 15:25:46 UTC] user meta data for customer 70 from jrwdev_show_user_meta
-[27-Mar-2017 15:25:46 UTC] Array
-(
-    [nickname] => Array
-        (
-            [0] => kaylalamb
-        )
-
-    [first_name] => Array
-        (
-            [0] => Kayla
-        )
-
-    [last_name] => Array
-        (
-            [0] => Lamb
-        )
-
-    [description] => Array
-        (
-            [0] => 
-        )
-
-    [rich_editing] => Array
-        (
-            [0] => true
-        )
-
-    [comment_shortcuts] => Array
-        (
-            [0] => false
-        )
-
-    [admin_color] => Array
-        (
-            [0] => fresh
-        )
-
-    [use_ssl] => Array
-        (
-            [0] => 0
-        )
-
-    [show_admin_bar_front] => Array
-        (
-            [0] => true
-        )
-
-    [locale] => Array
-        (
-            [0] => 
-        )
-
-    [wp_capabilities] => Array
-        (
-            [0] => a:1:{s:8:"customer";b:1;}
-        )
-
-    [wp_user_level] => Array
-        (
-            [0] => 0
-        )
-
-    [customer_id] => Array
-        (
-            [0] => 30478
-        )
-
-    [latest_customer] => Array
-        (
-            [0] => false
-        )
-
-    [company] => Array
-        (
-            [0] => 1991
-        )
-
-    [phone] => Array
-        (
-            [0] => 2107256029
-        )
-
-    [notes] => Array
-        (
-            [0] => 
-        )
-
-    [customer_group] => Array
-        (
-            [0] => RETAIL
-        )
-
-    [dismissed_wp_pointers] => Array
-        (
-            [0] => 
-        )
-
-    [last_update] => Array
-        (
-            [0] => 1490628315
-        )
-
-    [date_joined] => Array
-        (
-            [0] => 03/15/2017
-        )
-
-    [receive_marketing_emails] => Array
-        (
-            [0] => 1
-        )
-
-    [tax_exempt_category] => Array
-        (
-            [0] => 
-        )
-
-)
-
-[27-Mar-2017 15:26:47 UTC] user data for customer 72 from jrwdev_show_user_meta
-[27-Mar-2017 15:26:47 UTC] WP_User Object
-(
-    [data] => stdClass Object
-        (
-            [ID] => 72
-            [user_login] => brianbohl
-            [user_pass] => $P$Bvg4ejSFMrFOIiK5SOLk8MxUA/KwIK.
-            [user_nicename] => brianbohl
-            [user_email] => samplecustomer3@aol.com
-            [user_url] => 
-            [user_registered] => 2017-03-27 15:25:15
-            [user_activation_key] => 
-            [user_status] => 0
-            [display_name] => brianbohl
-        )
-
-    [ID] => 72
-    [caps] => Array
-        (
-            [customer] => 1
-        )
-
-    [cap_key] => wp_capabilities
-    [roles] => Array
-        (
-            [0] => customer
-        )
-
-    [allcaps] => Array
-        (
-            [read] => 1
-            [customer] => 1
-        )
-
-    [filter] => 
-)
-
-[27-Mar-2017 15:26:47 UTC] user meta data for customer 72 from jrwdev_show_user_meta
-[27-Mar-2017 15:26:47 UTC] Array
-(
-    [nickname] => Array
-        (
-            [0] => brianbohl
-        )
-
-    [first_name] => Array
-        (
-            [0] => Brian
-        )
-
-    [last_name] => Array
-        (
-            [0] => Bohl
-        )
-
-    [description] => Array
-        (
-            [0] => 
-        )
-
-    [rich_editing] => Array
-        (
-            [0] => true
-        )
-
-    [comment_shortcuts] => Array
-        (
-            [0] => false
-        )
-
-    [admin_color] => Array
-        (
-            [0] => fresh
-        )
-
-    [use_ssl] => Array
-        (
-            [0] => 0
-        )
-
-    [show_admin_bar_front] => Array
-        (
-            [0] => true
-        )
-
-    [locale] => Array
-        (
-            [0] => 
-        )
-
-    [wp_capabilities] => Array
-        (
-            [0] => a:1:{s:8:"customer";b:1;}
-        )
-
-    [wp_user_level] => Array
-        (
-            [0] => 0
-        )
-
-    [customer_id] => Array
-        (
-            [0] => 30480
-        )
-
-    [latest_customer] => Array
-        (
-            [0] => false
-        )
-
-    [company] => Array
-        (
-            [0] => 
-        )
-
-    [phone] => Array
-        (
-            [0] => 7074306779
-        )
-
-    [notes] => Array
-        (
-            [0] => 
-        )
-
-    [customer_group] => Array
-        (
-            [0] => RETAIL
-        )
-
-    [dismissed_wp_pointers] => Array
-        (
-            [0] => 
-        )
-
-    [last_update] => Array
-        (
-            [0] => 1490628315
-        )
-
-    [date_joined] => Array
-        (
-            [0] => 03/15/2017
-        )
-
-    [receive_marketing_emails] => Array
-        (
-            [0] => 1
-        )
-
-    [tax_exempt_category] => Array
-        (
-            [0] => 
-        )
-
-)
-
-[27-Mar-2017 15:26:47 UTC] user data for customer 74 from jrwdev_show_user_meta
-[27-Mar-2017 15:26:47 UTC] WP_User Object
-(
-    [data] => stdClass Object
-        (
-            [ID] => 74
-            [user_login] => devondusseault
-            [user_pass] => $P$B3HpgEL4ptM2kllsEXPYAVD6D2kmiW/
-            [user_nicename] => devondusseault
-            [user_email] => samplecustomer5@yahoo.com
-            [user_url] => 
-            [user_registered] => 2017-03-27 15:25:15
-            [user_activation_key] => 
-            [user_status] => 0
-            [display_name] => devondusseault
-        )
-
-    [ID] => 74
-    [caps] => Array
-        (
-            [customer] => 1
-        )
-
-    [cap_key] => wp_capabilities
-    [roles] => Array
-        (
-            [0] => customer
-        )
-
-    [allcaps] => Array
-        (
-            [read] => 1
-            [customer] => 1
-        )
-
-    [filter] => 
-)
-
-[27-Mar-2017 15:26:47 UTC] user meta data for customer 74 from jrwdev_show_user_meta
-[27-Mar-2017 15:26:47 UTC] Array
-(
-    [nickname] => Array
-        (
-            [0] => devondusseault
-        )
-
-    [first_name] => Array
-        (
-            [0] => Devon
-        )
-
-    [last_name] => Array
-        (
-            [0] => Dusseault
-        )
-
-    [description] => Array
-        (
-            [0] => 
-        )
-
-    [rich_editing] => Array
-        (
-            [0] => true
-        )
-
-    [comment_shortcuts] => Array
-        (
-            [0] => false
-        )
-
-    [admin_color] => Array
-        (
-            [0] => fresh
-        )
-
-    [use_ssl] => Array
-        (
-            [0] => 0
-        )
-
-    [show_admin_bar_front] => Array
-        (
-            [0] => true
-        )
-
-    [locale] => Array
-        (
-            [0] => 
-        )
-
-    [wp_capabilities] => Array
-        (
-            [0] => a:1:{s:8:"customer";b:1;}
-        )
-
-    [wp_user_level] => Array
-        (
-            [0] => 0
-        )
-
-    [customer_id] => Array
-        (
-            [0] => 30482
-        )
-
-    [latest_customer] => Array
-        (
-            [0] => true
-        )
-
-    [company] => Array
-        (
-            [0] => 
-        )
-
-    [phone] => Array
-        (
-            [0] => 8606349216
-        )
-
-    [notes] => Array
-        (
-            [0] => 
-        )
-
-    [customer_group] => Array
-        (
-            [0] => RETAIL
-        )
-
-    [dismissed_wp_pointers] => Array
-        (
-            [0] => 
-        )
-
-    [last_update] => Array
-        (
-            [0] => 1490628315
-        )
-
-    [date_joined] => Array
-        (
-            [0] => 03/15/2017
-        )
-
-    [receive_marketing_emails] => Array
-        (
-            [0] => 1
-        )
-
-    [tax_exempt_category] => Array
-        (
-            [0] => 
-        )
+    [email] => samplecustomer5@yahoo.com
+    [username] => samplecustomer5@yahoo.com
+    [first_name] => Devon
+    [last_name] => Dusseault
+    [shipping_address] => Array
+        (
+            [shipping_address_id] => 34235
+            [shipping_address_name] => Devon Dusseault
+            [shipping_address_first_name] => Devon
+            [shipping_address_last_name] => Dusseault
+            [shipping_address_company] => 
+            [shipping_address_line_1] => 17 Walnut circle
+            [shipping_address_line_2] => 
+            [shipping_city/suburb] => Windsor Locks
+            [shipping_state/province] => Connecticut
+            [shipping_state_abbreviation] => CT
+            [shipping_zip/postcode] => 06096
+            [shipping_country] => United States
+            [shipping_building_type] => residential
+            [shipping_address_phone] => 8606349216
+        )
+
+    [billing_address] => Array
+        (
+            [billing_address_id] => 34235
+            [billing_address_name] => Devon Dusseault
+            [billing_address_first_name] => Devon
+            [billing_address_last_name] => Dusseault
+            [billing_address_company] => 
+            [billing_address_line_1] => 17 Walnut circle
+            [billing_address_line_2] => 
+            [billing_city/suburb] => Windsor Locks
+            [billing_state/province] => Connecticut
+            [billing_state_abbreviation] => CT
+            [billing_zip/postcode] => 06096
+            [billing_country] => United States
+            [billing_building_type] => residential
+            [billing_address_phone] => 8606349216
+        )
+
+    [user_meta] => Array
+        (
+            [customer_id] => 30482
+            [company] => 
+            [phone] => 8606349216
+            [notes] => 
+            [customer_group] => RETAIL
+            [date_joined] => 03/15/2017
+            [receive_marketing_emails] => 1
+            [tax_exempt_category] => 
+            [wc_other_addresses] => Array
+                (
+                )
 
-)
-
-[27-Mar-2017 15:26:47 UTC] user data for customer 71 from jrwdev_show_user_meta
-[27-Mar-2017 15:26:47 UTC] WP_User Object
-(
-    [data] => stdClass Object
-        (
-            [ID] => 71
-            [user_login] => jameswillette
-            [user_pass] => $P$BvNTOPLUmZ6EQphQ7t6ET9licNPr.y1
-            [user_nicename] => jameswillette
-            [user_email] => samplecustomer2@gmail.com
-            [user_url] => 
-            [user_registered] => 2017-03-27 15:25:15
-            [user_activation_key] => 
-            [user_status] => 0
-            [display_name] => jameswillette
-        )
-
-    [ID] => 71
-    [caps] => Array
-        (
-            [customer] => 1
-        )
-
-    [cap_key] => wp_capabilities
-    [roles] => Array
-        (
-            [0] => customer
-        )
-
-    [allcaps] => Array
-        (
-            [read] => 1
-            [customer] => 1
-        )
-
-    [filter] => 
-)
-
-[27-Mar-2017 15:26:47 UTC] user meta data for customer 71 from jrwdev_show_user_meta
-[27-Mar-2017 15:26:47 UTC] Array
-(
-    [nickname] => Array
-        (
-            [0] => jameswillette
-        )
-
-    [first_name] => Array
-        (
-            [0] => James
-        )
-
-    [last_name] => Array
-        (
-            [0] => Willette
-        )
-
-    [description] => Array
-        (
-            [0] => 
-        )
-
-    [rich_editing] => Array
-        (
-            [0] => true
-        )
-
-    [comment_shortcuts] => Array
-        (
-            [0] => false
-        )
-
-    [admin_color] => Array
-        (
-            [0] => fresh
-        )
-
-    [use_ssl] => Array
-        (
-            [0] => 0
-        )
-
-    [show_admin_bar_front] => Array
-        (
-            [0] => true
-        )
-
-    [locale] => Array
-        (
-            [0] => 
-        )
-
-    [wp_capabilities] => Array
-        (
-            [0] => a:1:{s:8:"customer";b:1;}
-        )
-
-    [wp_user_level] => Array
-        (
-            [0] => 0
-        )
-
-    [customer_id] => Array
-        (
-            [0] => 30479
-        )
-
-    [latest_customer] => Array
-        (
-            [0] => false
-        )
-
-    [company] => Array
-        (
-            [0] => 
-        )
-
-    [phone] => Array
-        (
-            [0] => 4013322305
-        )
-
-    [notes] => Array
-        (
-            [0] => 
-        )
-
-    [customer_group] => Array
-        (
-            [0] => RETAIL
-        )
-
-    [dismissed_wp_pointers] => Array
-        (
-            [0] => 
-        )
-
-    [last_update] => Array
-        (
-            [0] => 1490628315
-        )
-
-    [date_joined] => Array
-        (
-            [0] => 03/15/2017
-        )
-
-    [receive_marketing_emails] => Array
-        (
-            [0] => 1
-        )
-
-    [tax_exempt_category] => Array
-        (
-            [0] => 
-        )
-
-)
-
-[27-Mar-2017 15:26:47 UTC] user data for customer 73 from jrwdev_show_user_meta
-[27-Mar-2017 15:26:47 UTC] WP_User Object
-(
-    [data] => stdClass Object
-        (
-            [ID] => 73
-            [user_login] => johnaverick
-            [user_pass] => $P$BebW1X/ksu5/RXvMDTA.JGadTroJOJ/
-            [user_nicename] => johnaverick
-            [user_email] => samplecustomer4@yahoo.com
-            [user_url] => 
-            [user_registered] => 2017-03-27 15:25:15
-            [user_activation_key] => 
-            [user_status] => 0
-            [display_name] => johnaverick
-        )
-
-    [ID] => 73
-    [caps] => Array
-        (
-            [customer] => 1
-        )
-
-    [cap_key] => wp_capabilities
-    [roles] => Array
-        (
-            [0] => customer
-        )
-
-    [allcaps] => Array
-        (
-            [read] => 1
-            [customer] => 1
-        )
-
-    [filter] => 
-)
-
-[27-Mar-2017 15:26:47 UTC] user meta data for customer 73 from jrwdev_show_user_meta
-[27-Mar-2017 15:26:47 UTC] Array
-(
-    [nickname] => Array
-        (
-            [0] => johnaverick
-        )
-
-    [first_name] => Array
-        (
-            [0] => John
-        )
-
-    [last_name] => Array
-        (
-            [0] => Averick
-        )
-
-    [description] => Array
-        (
-            [0] => 
-        )
-
-    [rich_editing] => Array
-        (
-            [0] => true
-        )
-
-    [comment_shortcuts] => Array
-        (
-            [0] => false
-        )
-
-    [admin_color] => Array
-        (
-            [0] => fresh
-        )
-
-    [use_ssl] => Array
-        (
-            [0] => 0
-        )
-
-    [show_admin_bar_front] => Array
-        (
-            [0] => true
-        )
-
-    [locale] => Array
-        (
-            [0] => 
-        )
-
-    [wp_capabilities] => Array
-        (
-            [0] => a:1:{s:8:"customer";b:1;}
-        )
-
-    [wp_user_level] => Array
-        (
-            [0] => 0
-        )
-
-    [customer_id] => Array
-        (
-            [0] => 30481
-        )
-
-    [latest_customer] => Array
-        (
-            [0] => false
-        )
-
-    [company] => Array
-        (
-            [0] => 
-        )
-
-    [phone] => Array
-        (
-            [0] => 352-489-3589
-        )
-
-    [notes] => Array
-        (
-            [0] => 
-        )
-
-    [customer_group] => Array
-        (
-            [0] => RETAIL
-        )
-
-    [dismissed_wp_pointers] => Array
-        (
-            [0] => 
-        )
-
-    [last_update] => Array
-        (
-            [0] => 1490628315
-        )
-
-    [date_joined] => Array
-        (
-            [0] => 03/15/2017
-        )
-
-    [receive_marketing_emails] => Array
-        (
-            [0] => 1
-        )
-
-    [tax_exempt_category] => Array
-        (
-            [0] => 
-        )
-
-)
-
-[27-Mar-2017 15:26:47 UTC] user data for customer 70 from jrwdev_show_user_meta
-[27-Mar-2017 15:26:47 UTC] WP_User Object
-(
-    [data] => stdClass Object
-        (
-            [ID] => 70
-            [user_login] => kaylalamb
-            [user_pass] => $P$BG0Gy5QzBJrV.JEKrFohlJbt/yqUQ0/
-            [user_nicename] => kaylalamb
-            [user_email] => samplecustomer1@gmail.com
-            [user_url] => 
-            [user_registered] => 2017-03-27 15:25:15
-            [user_activation_key] => 
-            [user_status] => 0
-            [display_name] => kaylalamb
-        )
-
-    [ID] => 70
-    [caps] => Array
-        (
-            [customer] => 1
-        )
-
-    [cap_key] => wp_capabilities
-    [roles] => Array
-        (
-            [0] => customer
-        )
-
-    [allcaps] => Array
-        (
-            [read] => 1
-            [customer] => 1
-        )
-
-    [filter] => 
-)
-
-[27-Mar-2017 15:26:47 UTC] user meta data for customer 70 from jrwdev_show_user_meta
-[27-Mar-2017 15:26:47 UTC] Array
-(
-    [nickname] => Array
-        (
-            [0] => kaylalamb
-        )
-
-    [first_name] => Array
-        (
-            [0] => Kayla
-        )
-
-    [last_name] => Array
-        (
-            [0] => Lamb
-        )
-
-    [description] => Array
-        (
-            [0] => 
-        )
-
-    [rich_editing] => Array
-        (
-            [0] => true
-        )
-
-    [comment_shortcuts] => Array
-        (
-            [0] => false
-        )
-
-    [admin_color] => Array
-        (
-            [0] => fresh
-        )
-
-    [use_ssl] => Array
-        (
-            [0] => 0
-        )
-
-    [show_admin_bar_front] => Array
-        (
-            [0] => true
-        )
-
-    [locale] => Array
-        (
-            [0] => 
-        )
-
-    [wp_capabilities] => Array
-        (
-            [0] => a:1:{s:8:"customer";b:1;}
-        )
-
-    [wp_user_level] => Array
-        (
-            [0] => 0
-        )
-
-    [customer_id] => Array
-        (
-            [0] => 30478
-        )
-
-    [latest_customer] => Array
-        (
-            [0] => false
-        )
-
-    [company] => Array
-        (
-            [0] => 1991
-        )
-
-    [phone] => Array
-        (
-            [0] => 2107256029
-        )
-
-    [notes] => Array
-        (
-            [0] => 
-        )
-
-    [customer_group] => Array
-        (
-            [0] => RETAIL
-        )
-
-    [dismissed_wp_pointers] => Array
-        (
-            [0] => 
-        )
-
-    [last_update] => Array
-        (
-            [0] => 1490628315
-        )
-
-    [date_joined] => Array
-        (
-            [0] => 03/15/2017
-        )
-
-    [receive_marketing_emails] => Array
-        (
-            [0] => 1
-        )
-
-    [tax_exempt_category] => Array
-        (
-            [0] => 
         )
 
 )

@@ -68,9 +68,6 @@ function jrwdev_add_additional_customer_fields( $user_id ) {
     $user = get_userdata( $user_id );
     $user_meta = get_user_meta($user_id);
 
-    write_log("Checking user meta in user_register; expect nothing b/c user is not yet created");
-    write_log($user_meta);
-
     if( count($user) > 0 && in_array('customer', $user->roles) ) {
         // write_log("Add meta fields to a customer...");
         // $user_meta = get_user_meta($user_id);
@@ -310,17 +307,52 @@ function jrwdev_manage_imported_data( $user, $item, $options, $raw_headers ) {
     $user['user_meta']['receive_marketing_emails']  = $item['receive_marketing_emails'];
     $user['user_meta']['tax_exempt_category']       = $item['tax_exempt_category'];
 
+    if( isset($item['addresses']) && $item['addresses'] != '' ) {
+        $user = add_imported_csv_addresses( $user, $item['addresses'] );
+    }
+
     $store_credit = $item['store_credit'];
     if( floatval($store_credit) > 0 ) {
         create_store_credit_coupon( $user['email'], $store_credit ); 
     }
 
-    // Parse addresses and add to user
     return $user;
 }
 
-function parse_imported_csv_addresses( $email, $amount ) {
+// Parse addresses in CSV (delimiter => "|") and RETURN values as associate array
+function add_imported_csv_addresses( $user, $raw_addresses ) {
+    $other_shipping_addresses = array();
 
+    $addresses = explode('|', $raw_addresses);
+
+    foreach ($addresses as $i => $address) {
+        $address_elements = explode(",", $address);
+        
+        foreach($address_elements as $address_element) {
+
+            list($raw_field, $raw_value) = explode(":", $address_element);
+            $field = strtolower(str_replace(" ", "_", trim($raw_field))); 
+            $value = trim($raw_value); 
+            $billing_field = "billing_" . $field;
+            $shipping_field = "shipping_" . $field;
+
+            if($i === 0) {
+                $user['billing_address'][$billing_field] = $value;
+                $user['shipping_address'][$shipping_field] = $value;
+            } else {
+                $adjusted_i = $i - 1;
+                $other_shipping_addresses[$adjusted_i][$shipping_field] = $value;
+            }
+
+        }
+    }
+
+    $user['user_meta']['wc_other_addresses'] = $other_shipping_addresses;
+
+    write_log("Checking $user after add_imported_csv_addresses function");
+    write_log($user);
+    
+    return $user;
 }
 
 // Copied from WC_Store_Credit_Plus_Admin -> 
@@ -360,23 +392,23 @@ function create_store_credit_coupon( $email, $amount ) {
 // **** TOOLS AND TESTS
 // 
 
-add_action( 'init', 'jrwdev_user_data_testing' );
-function jrwdev_user_data_testing() {
-    $args = array(
-        'role' => 'customer'
-    );
-    $all_customers = get_users( $args );
+// add_action( 'init', 'jrwdev_user_data_testing' );
+// function jrwdev_user_data_testing() {
+//     $args = array(
+//         'role' => 'customer'
+//     );
+//     $all_customers = get_users( $args );
 
-    foreach ($all_customers as $index => $customer) {
-        $customer_user_data = get_userdata($customer->ID);
-        write_log('user data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
-        write_log($customer_user_data);   
+//     foreach ($all_customers as $index => $customer) {
+//         $customer_user_data = get_userdata($customer->ID);
+//         write_log('user data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
+//         write_log($customer_user_data);   
 
-        $customer_user_meta = get_user_meta($customer->ID);
-        write_log('user meta data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
-        write_log($customer_user_meta);
-    }
-}
+//         $customer_user_meta = get_user_meta($customer->ID);
+//         write_log('user meta data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
+//         write_log($customer_user_meta);
+//     }
+// }
 
 
 // ** Short cut link to csv import field mapping 
