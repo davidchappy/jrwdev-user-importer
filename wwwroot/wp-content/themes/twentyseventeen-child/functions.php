@@ -93,6 +93,21 @@ function jrwdev_add_additional_customer_fields( $user_id ) {
         if( !isset($user_meta['customer_group']) ) {
             update_user_meta( $user_id, 'customer_group', '' );
         }
+
+        // BIRTH DATE (blank by default)
+        if( !isset($user_meta['birth_date']) ) {
+            update_user_meta( $user_id, 'birth_date', '' );
+        }
+
+        // RECEIVE_MARKETING_EMAILS (0 by default)
+        if( !isset($user_meta['receive_marketing_emails']) ) {
+            update_user_meta( $user_id, 'receive_marketing_emails', '0' );
+        }
+
+        // TAX_EXEMPT_CATEGORY (blank by default)
+        if( !isset($user_meta['tax_exempt_category']) ) {
+            update_user_meta( $user_id, 'tax_exempt_category', '' );
+        }
     }  
 }
 
@@ -169,28 +184,28 @@ function jrwdev_show_extra_profile_fields( $user ) {
             </tr>
 
             <tr>
-                <th><label for="user_phone">Phone</label></th>
+                <th><label for="phone">Phone</label></th>
 
                 <td>
-                    <input type="text" name="user_phone" id="user_phone" value="<?php echo esc_attr( get_the_author_meta( 'phone', $user->ID ) ); ?>" class="regular-text" /><br />
+                    <input type="text" name="phone" id="phone" value="<?php echo esc_attr( get_the_author_meta( 'phone', $user->ID ) ); ?>" class="regular-text" /><br />
                     <span class="description"></span>
                 </td>
             </tr>
 
             <tr>
-                <th><label for="user_company">Company</label></th>
+                <th><label for="company">Company</label></th>
 
                 <td>
-                    <input type="text" name="user_company" id="user_company" value="<?php echo esc_attr( get_the_author_meta( 'company', $user->ID ) ); ?>" class="regular-text" /><br />
+                    <input type="text" name="company" id="company" value="<?php echo esc_attr( get_the_author_meta( 'company', $user->ID ) ); ?>" class="regular-text" /><br />
                     <span class="description"></span>
                 </td>
             </tr>
 
             <tr>
-                <th><label for="user_notes">Notes</label></th>
+                <th><label for="notes">Notes</label></th>
 
                 <td>
-                    <textarea style="width:350px" type="text" name="user_notes" id="user_notes" class="regular-text" /><?php echo esc_attr( get_the_author_meta( 'notes', $user->ID ) ); ?></textarea><br />
+                    <textarea style="width:350px" type="text" name="notes" id="notes" class="regular-text" /><?php echo esc_attr( get_the_author_meta( 'notes', $user->ID ) ); ?></textarea><br />
                     <span class="description"></span>
                 </td>
             </tr>
@@ -215,13 +230,20 @@ function jrwdev_show_extra_profile_fields( $user ) {
             
             <?php 
                 $marketing_emails = get_the_author_meta( 'receive_marketing_emails', $user->ID );
-                $marketing_emails_text = $marketing_emails === '1' ? 'Yes' : 'No'; 
             ?>
             <tr>
                 <th><label for="receive_marketing_emails">Receive Marketing Emails?</label></th>
 
                 <td>
-                    <input type="text" name="receive_marketing_emails" id="receive_marketing_emails" value="<?php echo $marketing_emails_text; ?>" class="regular-text" /><br />
+                    <select name="receive_marketing_emails" id="receive_marketing_emails" value="<?php echo $marketing_emails; ?>">
+                        <?php if($marketing_emails === '1') { ?>
+                            <option value="1" selected>Yes</option>
+                            <option value="0">No</option>
+                        <?php } else { ?>
+                            <option value="1">Yes</option>
+                            <option value="0" selected>No</option>
+                        <?php } ?>
+                    </select>
                     <span class="description"></span>
                 </td>
             </tr>
@@ -245,9 +267,9 @@ add_action( 'edit_user_profile_update', 'jrwdev_save_extra_profile_fields' );
 
 function jrwdev_save_extra_profile_fields( $user_id ) {
     update_user_meta( $user_id, 'customer_id',              $_POST['customer_id'] );
-    update_user_meta( $user_id, 'user_company',             $_POST['user_company'] );
-    update_user_meta( $user_id, 'user_phone',               $_POST['user_phone'] );
-    update_user_meta( $user_id, 'user_notes',               $_POST['user_notes'] );
+    update_user_meta( $user_id, 'company',                  $_POST['company'] );
+    update_user_meta( $user_id, 'phone',                    $_POST['phone'] );
+    update_user_meta( $user_id, 'notes',                    $_POST['notes'] );
     update_user_meta( $user_id, 'customer_group',           $_POST['customer_group'] );
     update_user_meta( $user_id, 'birth_date',               $_POST['birth_date'] );
     update_user_meta( $user_id, 'receive_marketing_emails', $_POST['receive_marketing_emails'] );
