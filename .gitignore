@@ -7,3 +7,6 @@ wwwroot/wp-content/uploads/*
 wwwroot/wp-content/.DS_Store
 
 wwwroot/wp-content/plugins/*
+
+wwwroot/.htaccess
+wwwroot/.user.ini
