@@ -205,15 +205,6 @@ function jrwdev_show_extra_profile_fields( $user ) {
             </tr>
 
             <tr>
-                <th><label for="date_joined">Date Joined</label></th>
-
-                <td>
-                    <input type="text" name="date_joined" id="date_joined" value="<?php echo esc_attr( get_the_author_meta( 'date_joined', $user->ID ) ); ?>" class="regular-text" /><br />
-                    <span class="description"></span>
-                </td>
-            </tr>
-
-            <tr>
                 <th><label for="birth_date">Birth Date</label></th>
 
                 <td>
@@ -258,7 +249,6 @@ function jrwdev_save_extra_profile_fields( $user_id ) {
     update_user_meta( $user_id, 'user_phone',               $_POST['user_phone'] );
     update_user_meta( $user_id, 'user_notes',               $_POST['user_notes'] );
     update_user_meta( $user_id, 'customer_group',           $_POST['customer_group'] );
-    update_user_meta( $user_id, 'date_joined',              $_POST['date_joined'] );
     update_user_meta( $user_id, 'birth_date',               $_POST['birth_date'] );
     update_user_meta( $user_id, 'receive_marketing_emails', $_POST['receive_marketing_emails'] );
     update_user_meta( $user_id, 'tax_exempt_category',      $_POST['tax_exempt_category'] );
@@ -283,7 +273,7 @@ function jrwdev_filter_default_mappings( $mapping_options, $importer, $headers, 
             'first_name'      => __( 'First Name', 'woocommerce-csv-import-suite' ),  
             'last_name'       => __( 'Last Name', 'woocommerce-csv-import-suite' ), 
             'phone'           => __( 'Phone', 'woocommerce-csv-import-suite' ), 
-            // 'date_registered' => __( 'Date Joined', 'woocommerce-csv-import-suite' ),
+            'date_joined'     => __( 'Date Joined', 'woocommerce-csv-import-suite' ),
         ),
 
         __( 'Customer data', 'woocommerce-csv-import-suite' ) => array(
@@ -294,7 +284,6 @@ function jrwdev_filter_default_mappings( $mapping_options, $importer, $headers, 
             'customer_group'            => __( 'Customer Group', 'woocommerce-csv-import-suite' ),
             'birth_date'                => __( 'Birth Date', 'woocommerce-csv-import-suite' ),
             'tax_exempt_category'       => __( 'Tax Exempt Category', 'woocommerce-csv-import-suite' ),
-            'date_joined'               => __( 'Date Joined', 'woocommerce-csv-import-suite' ),
             'receive_marketing_emails'  => __( 'Receive Marketing Emails', 'woocommerce-csv-import-suite' ),
             'customer_name'             => __( 'Customer Name', 'woocommerce-csv-import-suite' ),  
             'store_credit'              => __( 'Store Credit', 'woocommerce-csv-import-suite' ),     
@@ -314,9 +303,9 @@ function jrwdev_manage_imported_data( $user, $item, $options, $raw_headers ) {
     $user['user_meta']['phone']                     = $item['phone'];
     $user['user_meta']['notes']                     = $item['notes'];
     $user['user_meta']['customer_group']            = $item['customer_group'];
-    $user['user_meta']['date_joined']               = $item['date_joined'];
     $user['user_meta']['receive_marketing_emails']  = $item['receive_marketing_emails'];
     $user['user_meta']['tax_exempt_category']       = $item['tax_exempt_category'];
+    $user['date_registered']                        = $item['date_joined'];
 
     if( isset($item['addresses']) && $item['addresses'] != '' && $item['addresses'] != array() ) {
         $user = parse_imported_csv_addresses( $user, $item['addresses'] );
@@ -435,26 +424,26 @@ function create_store_credit_coupon( $email, $amount ) {
 // **** TOOLS AND TESTS
 // 
 
-// add_action( 'init', 'jrwdev_user_data_testing' );
-// function jrwdev_user_data_testing() {
-//     // write_log('$_POST data at init');
-//     // write_log($_POST);
+add_action( 'init', 'jrwdev_user_data_testing' );
+function jrwdev_user_data_testing() {
+    // write_log('$_POST data at init');
+    // write_log($_POST);
 
-//     $args = array(
-//         'role' => 'customer'
-//     );
-//     $all_customers = get_users( $args );
+    $args = array(
+        'role' => 'customer'
+    );
+    $all_customers = get_users( $args );
 
-//     foreach ($all_customers as $index => $customer) {
-//         $customer_user_data = get_userdata($customer->ID);
-//         write_log('user data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
-//         write_log($customer_user_data);   
+    foreach ($all_customers as $index => $customer) {
+        $customer_user_data = get_userdata($customer->ID);
+        write_log('user data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
+        write_log($customer_user_data);   
 
-//         $customer_user_meta = get_user_meta($customer->ID);
-//         write_log('user meta data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
-//         write_log($customer_user_meta);
-//     }
-// }
+        $customer_user_meta = get_user_meta($customer->ID);
+        write_log('user meta data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
+        write_log($customer_user_meta);
+    }
+}
 
 
 // ** Short cut link to csv import field mapping 
