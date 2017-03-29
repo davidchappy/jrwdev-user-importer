@@ -81,7 +81,7 @@ function jrwdev_add_additional_customer_fields( $user_id ) {
 
         // PHONE (0 by default)
         if( !isset($user_meta['phone']) ) {
-            update_user_meta( $user_id, 'phone', 0 );
+            update_user_meta( $user_id, 'phone', '' );
         }
 
         // NOTES (blank string by default)
@@ -107,22 +107,35 @@ function add_incremented_customer_id( $user ) {
         'number'        => 1
     );
     $latest_customer_search = get_users( $args );
+
     $latest_customer = null;   
     if( count($latest_customer_search) > 0 ) {
         $latest_customer = $latest_customer_search[0];   
     }
 
     if( isset($latest_customer) && $latest_customer->ID != $user->ID ) {
-        // If found, name this user as the latest and increment customer id by 1
+        // If latest customer is found, get its customer id and name this user as the latest
         $latest_customer_meta = get_user_meta($latest_customer->ID);
-        $highest_customer_id = intval($latest_customer_meta['customer_id']);
+        $raw_customer_id = $latest_customer_meta['customer_id'];
+        $highest_customer_id = intval($raw_customer_id[0]);
         update_user_meta( $latest_customer->ID, 'latest_customer', 'false' );
-        $highest_customer_id += 1;
-        update_user_meta( $user->ID, 'customer_id', $highest_customer_id, true );
+
+        // Increment customer id, then check if it exists; loop until unique
+        $id_exists = true;
+        while ( $id_exists === true ) {
+            $highest_customer_id += 1;
+            $customer_id_search = get_users( array( 'meta_key' => 'customer_id', 'meta_value' => (string)$highest_customer_id ) );
+            
+            if( count($customer_id_search) === 0 ) {
+                $id_exists = false;
+            } 
+        }
+
+        update_user_meta( $user->ID, 'customer_id', $highest_customer_id );
         update_user_meta( $user->ID, 'latest_customer', 'true' );
     } else {
         // If not found, name this user latest and initialize customer id to 1 
-        update_user_meta( $user->id, 'customer_id', 1, true );
+        update_user_meta( $user->id, 'customer_id', 1 );
         update_user_meta( $user->id, 'latest_customer', 'true' );
     }
 }
@@ -422,26 +435,26 @@ function create_store_credit_coupon( $email, $amount ) {
 // **** TOOLS AND TESTS
 // 
 
-add_action( 'init', 'jrwdev_user_data_testing' );
-function jrwdev_user_data_testing() {
-    // write_log('$_POST data at init');
-    // write_log($_POST);
+// add_action( 'init', 'jrwdev_user_data_testing' );
+// function jrwdev_user_data_testing() {
+//     // write_log('$_POST data at init');
+//     // write_log($_POST);
 
-    $args = array(
-        'role' => 'customer'
-    );
-    $all_customers = get_users( $args );
+//     $args = array(
+//         'role' => 'customer'
+//     );
+//     $all_customers = get_users( $args );
 
-    foreach ($all_customers as $index => $customer) {
-        $customer_user_data = get_userdata($customer->ID);
-        write_log('user data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
-        write_log($customer_user_data);   
+//     foreach ($all_customers as $index => $customer) {
+//         $customer_user_data = get_userdata($customer->ID);
+//         write_log('user data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
+//         write_log($customer_user_data);   
 
-        $customer_user_meta = get_user_meta($customer->ID);
-        write_log('user meta data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
-        write_log($customer_user_meta);
-    }
-}
+//         $customer_user_meta = get_user_meta($customer->ID);
+//         write_log('user meta data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
+//         write_log($customer_user_meta);
+//     }
+// }
 
 
 // ** Short cut link to csv import field mapping 
