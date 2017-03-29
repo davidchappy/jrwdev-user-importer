@@ -296,18 +296,6 @@ function jrwdev_filter_default_mappings( $mapping_options, $importer, $headers, 
 
 add_filter( 'wc_csv_import_suite_parsed_customer_data', 'jrwdev_manage_imported_data', 10, 4 );
 function jrwdev_manage_imported_data( $user, $item, $options, $raw_headers ) {
-    // write_log('user $user jrwdev_manage_imported_data');
-    // write_log($user);  
-
-    // write_log('user $item jrwdev_manage_imported_data');
-    // write_log($item);  
-
-    // write_log('user $options jrwdev_manage_imported_data');
-    // write_log($options);     
-
-    // write_log('user $raw_headers jrwdev_manage_imported_data');
-    // write_log($raw_headers);
-
     $user['user_meta']['customer_id']               = $item['customer_id'];
     $user['user_meta']['company']                   = $item['company'];
     $user['user_meta']['phone']                     = $item['phone'];
@@ -324,10 +312,7 @@ function jrwdev_manage_imported_data( $user, $item, $options, $raw_headers ) {
     $store_credit = $item['store_credit'];
     if( floatval($store_credit) > 0 ) {
         create_store_credit_coupon( $user['email'], $store_credit ); 
-    }
-
-    write_log('user $user jrwdev_manage_imported_data');
-    write_log($user);  
+    } 
 
     return $user;
 }
@@ -442,20 +427,20 @@ function jrwdev_user_data_testing() {
     // write_log('$_POST data at init');
     // write_log($_POST);
 
-    // $args = array(
-    //     'role' => 'customer'
-    // );
-    // $all_customers = get_users( $args );
+    $args = array(
+        'role' => 'customer'
+    );
+    $all_customers = get_users( $args );
 
-    // foreach ($all_customers as $index => $customer) {
-    //     $customer_user_data = get_userdata($customer->ID);
-    //     write_log('user data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
-    //     write_log($customer_user_data);   
+    foreach ($all_customers as $index => $customer) {
+        $customer_user_data = get_userdata($customer->ID);
+        write_log('user data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
+        write_log($customer_user_data);   
 
-    //     $customer_user_meta = get_user_meta($customer->ID);
-    //     write_log('user meta data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
-    //     write_log($customer_user_meta);
-    // }
+        $customer_user_meta = get_user_meta($customer->ID);
+        write_log('user meta data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
+        write_log($customer_user_meta);
+    }
 }
 
 
