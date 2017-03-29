@@ -47,8 +47,6 @@ add_action('wp_enqueue_scripts', 'twentyseventeen_child_javascripts');
 
 
 
-
-
 // 
 // **** ADD ADDITIONAL USER FIELDS
 // 
@@ -62,18 +60,16 @@ function jrwdev_add_custom_username( $data, $options, $this ) {
     return $data;
 }
 
-
-add_filter( 'user_register', 'jrwdev_add_additional_customer_fields', 10, 3 );
+// After registering user, adds non-WC fields
+// This is for customers created manually (not through import)
+add_action( 'user_register', 'jrwdev_add_additional_customer_fields', 10, 3 );
 function jrwdev_add_additional_customer_fields( $user_id ) {
     $user = get_userdata( $user_id );
     $user_meta = get_user_meta($user_id);
 
     if( count($user) > 0 && in_array('customer', $user->roles) ) {
-        // write_log("Add meta fields to a customer...");
-        // $user_meta = get_user_meta($user_id);
-
         // CUSTOMER_ID
-        // If not an imported customer, use the incremented customer_id funcdtion
+        // If not an imported customer, use the incremented customer_id function
         if( !isset($user_meta['customer_id']) ) {
             add_incremented_customer_id( $user );
         }
@@ -97,16 +93,11 @@ function jrwdev_add_additional_customer_fields( $user_id ) {
         if( !isset($user_meta['customer_group']) ) {
             update_user_meta( $user_id, 'customer_group', '' );
         }
-
-        $user_meta = get_user_meta($user_id);
-
-        // write_log('$user_meta from jrwdev_add_additional_customer_fields after adding fields');
-        // write_log($user_meta);
-
-        // return true;
     }  
 }
 
+// Helper: ensures user has the latest customer_id
+// Seems inefficient
 function add_incremented_customer_id( $user ) {
     // Try to find the latest customer
     $args = array(
@@ -119,17 +110,12 @@ function add_incremented_customer_id( $user ) {
     $latest_customer = null;   
     if( count($latest_customer_search) > 0 ) {
         $latest_customer = $latest_customer_search[0];   
-        // write_log('$latest_customer from add_incremented_customer_id');
-        // write_log($latest_customer); 
-        // write_log('$user from add_incremented_customer_id');
-        // write_log($user); 
     }
 
     if( isset($latest_customer) && $latest_customer->ID != $user->ID ) {
         // If found, name this user as the latest and increment customer id by 1
         $latest_customer_meta = get_user_meta($latest_customer->ID);
         $highest_customer_id = intval($latest_customer_meta['customer_id']);
-        // write_log('setting customer id in add_incremented_customer_id');
         update_user_meta( $latest_customer->ID, 'latest_customer', 'false' );
         $highest_customer_id += 1;
         update_user_meta( $user->ID, 'customer_id', $highest_customer_id, true );
@@ -139,77 +125,131 @@ function add_incremented_customer_id( $user ) {
         update_user_meta( $user->id, 'customer_id', 1, true );
         update_user_meta( $user->id, 'latest_customer', 'true' );
     }
-
-    $updated_user = get_userdata($user->id);
-    // write_log('$updated_user from add_incremented_customer_id');
-    // write_log($updated_user);
 }
-
-// add_filter( 'wc_csv_import_suite_create_customer_data', 'jrwdev_update_additional_customer_fields', 10, 3 );
-// add_action( 'wc_csv_import_suite_create_customer', 'inspect_new_customer', 10, 3 );
-// function inspect_new_customer($id, $data, $options) {
-//     write_log('This is $data from inspect_new_customer');
-//     write_log($data);
-// };
-
 
 
 // 
-// **** SHOW ADDITIONAL USER META FIELDS
+// **** SHOW/UPDATE ADDITIONAL USER META FIELDS
 // 
 
 // Show extra fields on the user profile page
 add_action( 'show_user_profile', 'jrwdev_show_extra_profile_fields' );
 add_action( 'edit_user_profile', 'jrwdev_show_extra_profile_fields' );
 
-function jrwdev_show_extra_profile_fields( $user ) { ?>
+function jrwdev_show_extra_profile_fields( $user ) { 
+    // May want to restrict to admin access?
 
-    <h3>Extra profile information</h3>
+    $user_data = get_userdata( $user->ID );
+    if( in_array( 'customer', $user_data->roles ) ) { ?> 
 
-    <table class="form-table">
+        <h3>Additional profile information</h3>
 
-        <tr>
-            <th><label for="random_attribute">Random Attribute</label></th>
+        <table class="form-table">
 
-            <td>
-                <input type="text" name="random_attribute" id="random_attribute" value="<?php echo esc_attr( get_the_author_meta( 'random_attribute', $user->ID ) ); ?>" class="regular-text" /><br />
-                <span class="description">This is Your Random Attribute.</span>
-            </td>
-        </tr>
+            <tr>
+                <th><label for="customer_id">Customer ID</label></th>
 
-    </table>
-<?php }
+                <td>
+                    <input type="text" name="customer_id" id="customer_id" value="<?php echo esc_attr( get_the_author_meta( 'customer_id', $user->ID ) ); ?>" class="regular-text" /><br />
+                    <span class="description"></span>
+                </td>
+            </tr>
 
-add_action( 'personal_options_update', 'jrwdev_save_extra_fields' );
-add_action( 'edit_user_profile_update', 'jrwdev_save_extra_fields' );
+            <tr>
+                <th><label for="user_phone">Phone</label></th>
 
-function jrwdev_save_extra_fields( $id ) {
-    update_user_meta( $id, 'random_attribute', $_POST['random_attribute'] );
+                <td>
+                    <input type="text" name="user_phone" id="user_phone" value="<?php echo esc_attr( get_the_author_meta( 'phone', $user->ID ) ); ?>" class="regular-text" /><br />
+                    <span class="description"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="user_company">Company</label></th>
+
+                <td>
+                    <input type="text" name="user_company" id="user_company" value="<?php echo esc_attr( get_the_author_meta( 'company', $user->ID ) ); ?>" class="regular-text" /><br />
+                    <span class="description"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="user_notes">Notes</label></th>
+
+                <td>
+                    <textarea style="width:350px" type="text" name="user_notes" id="user_notes" class="regular-text" /><?php echo esc_attr( get_the_author_meta( 'notes', $user->ID ) ); ?></textarea><br />
+                    <span class="description"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="customer_group">Customer Group</label></th>
+
+                <td>
+                    <input type="text" name="customer_group" id="customer_group" value="<?php echo esc_attr( get_the_author_meta( 'customer_group', $user->ID ) ); ?>" class="regular-text" /><br />
+                    <span class="description"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="date_joined">Date Joined</label></th>
+
+                <td>
+                    <input type="text" name="date_joined" id="date_joined" value="<?php echo esc_attr( get_the_author_meta( 'date_joined', $user->ID ) ); ?>" class="regular-text" /><br />
+                    <span class="description"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="birth_date">Birth Date</label></th>
+
+                <td>
+                    <input type="text" name="birth_date" id="birth_date" value="<?php echo esc_attr( get_the_author_meta( 'birth_date', $user->ID ) ); ?>" class="regular-text" /><br />
+                    <span class="description"></span>
+                </td>
+            </tr>
+            
+            <?php 
+                $marketing_emails = get_the_author_meta( 'receive_marketing_emails', $user->ID );
+                $marketing_emails_text = $marketing_emails === '1' ? 'Yes' : 'No'; 
+            ?>
+            <tr>
+                <th><label for="receive_marketing_emails">Receive Marketing Emails?</label></th>
+
+                <td>
+                    <input type="text" name="receive_marketing_emails" id="receive_marketing_emails" value="<?php echo $marketing_emails_text; ?>" class="regular-text" /><br />
+                    <span class="description"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="tax_exempt_category">Tax Exempt Category</label></th>
+
+                <td>
+                    <input type="text" name="tax_exempt_category" id="tax_exempt_category" value="<?php echo esc_attr( get_the_author_meta( 'tax_exempt_category', $user->ID ) ); ?>" class="regular-text" /><br />
+                    <span class="description"></span>
+                </td>
+            </tr>
+
+        </table>
+<?php }    
 }
 
-// add_action( 'personal_options_update', 'jrwdev_add_extra_profile_fields' );
-// add_action( 'edit_user_profile_update', 'jrwdev_add_extra_profile_fields' );
-add_action( 'woocommerce_customer_meta_fields', 'jrwdev_add_extra_profile_fields' );
-function jrwdev_add_extra_profile_fields( $customer_fields ) {
-    // write_log('THIS IS $customer_fields FROM jrwdev_add_extra_profile_fields');
-    // write_log($customer_fields);
 
-    // update_user_meta( $user_id, 'customer_id',      $_POST['customer_id'] );
-    // update_user_meta( $user_id, 'company',          $_POST['company'] );
-    // update_user_meta( $user_id, 'phone',            $_POST['phone'] );
-    // update_user_meta( $user_id, 'notes',            $_POST['notes'] );
-    // update_user_meta( $user_id, 'customer_group',   $_POST['customer_group'] );
-    // update_user_meta( $user_id, 'date_joined',      $_POST['date_joined'] );
-    // update_user_meta( $user_id, 'birth_date',       $_POST['birth_date'] );
-    // $customer_fields['customer_id'] = array(
-    //     'label'         => 'Customer ID',
-    //     'description'   => ''
-    // );
-    return $customer_fields;
+add_action( 'personal_options_update', 'jrwdev_save_extra_profile_fields' );
+add_action( 'edit_user_profile_update', 'jrwdev_save_extra_profile_fields' );
+
+function jrwdev_save_extra_profile_fields( $user_id ) {
+    update_user_meta( $user_id, 'customer_id',              $_POST['customer_id'] );
+    update_user_meta( $user_id, 'user_company',             $_POST['user_company'] );
+    update_user_meta( $user_id, 'user_phone',               $_POST['user_phone'] );
+    update_user_meta( $user_id, 'user_notes',               $_POST['user_notes'] );
+    update_user_meta( $user_id, 'customer_group',           $_POST['customer_group'] );
+    update_user_meta( $user_id, 'date_joined',              $_POST['date_joined'] );
+    update_user_meta( $user_id, 'birth_date',               $_POST['birth_date'] );
+    update_user_meta( $user_id, 'receive_marketing_emails', $_POST['receive_marketing_emails'] );
+    update_user_meta( $user_id, 'tax_exempt_category',      $_POST['tax_exempt_category'] );
 }
-
-
-
 
 
 
@@ -219,26 +259,7 @@ function jrwdev_add_extra_profile_fields( $customer_fields ) {
 
 // Alter WC's mappings to correctly auto-populate the import Field Mapping screen
 add_filter( "wc_csv_import_suite_column_mapping_options", "jrwdev_filter_default_mappings", 11, 5 );
-
 function jrwdev_filter_default_mappings( $mapping_options, $importer, $headers, $raw_headers, $columns ) {
-    // write_log('THIS IS $mapping_options FROM jrwdev_filter_default_mappings');
-    // write_log($mapping_options);
-
-    // write_log('THIS IS $importer FROM jrwdev_filter_default_mappings');
-    // write_log($importer);
-
-    // write_log('THIS IS $headers FROM jrwdev_filter_default_mappings');
-    // write_log($headers);
-
-    // write_log('THIS IS $raw_headers FROM jrwdev_filter_default_mappings');
-    // write_log($raw_headers);
-
-    // write_log('THIS IS $columns FROM jrwdev_filter_default_mappings');
-    // write_log($columns);
-    // 
-
-    $billing_prefix  = __( 'Billing: %s',  'woocommerce-csv-import-suite' );
-    $shipping_prefix = __( 'Shipping: %s', 'woocommerce-csv-import-suite' );
 
     return array(
 
@@ -250,8 +271,6 @@ function jrwdev_filter_default_mappings( $mapping_options, $importer, $headers, 
             'last_name'       => __( 'Last Name', 'woocommerce-csv-import-suite' ), 
             'phone'           => __( 'Phone', 'woocommerce-csv-import-suite' ), 
             // 'date_registered' => __( 'Date Joined', 'woocommerce-csv-import-suite' ),
-            // 'role'            => __( 'Role', 'woocommerce-csv-import-suite' ),
-            // 'url'             => __( 'URL', 'woocommerce-csv-import-suite' ),
         ),
 
         __( 'Customer data', 'woocommerce-csv-import-suite' ) => array(
@@ -271,18 +290,9 @@ function jrwdev_filter_default_mappings( $mapping_options, $importer, $headers, 
     );
 }
 
-// add_action( 'wc_csv_import_suite_before_import_column_mapper', 'jrwdev_filter_out_mappings');
-// function jrwdev_filter_out_mappings( $csv_importer ) {
-//     write_log('$csv_importer from jrwdev_filter_out_mappings');
-//     write_log($csv_importer); 
-//     // array_splice( $default_mapping['Customer data'], 9 );
-// }
-
-
 // 
 // **** MANAGE IMPORTED DATA
 // 
-
 
 add_filter( 'wc_csv_import_suite_parsed_customer_data', 'jrwdev_manage_imported_data', 10, 4 );
 function jrwdev_manage_imported_data( $user, $item, $options, $raw_headers ) {
@@ -307,8 +317,8 @@ function jrwdev_manage_imported_data( $user, $item, $options, $raw_headers ) {
     $user['user_meta']['receive_marketing_emails']  = $item['receive_marketing_emails'];
     $user['user_meta']['tax_exempt_category']       = $item['tax_exempt_category'];
 
-    if( isset($item['addresses']) && $item['addresses'] != '' ) {
-        $user = add_imported_csv_addresses( $user, $item['addresses'] );
+    if( isset($item['addresses']) && $item['addresses'] != '' && $item['addresses'] != array() ) {
+        $user = parse_imported_csv_addresses( $user, $item['addresses'] );
     }
 
     $store_credit = $item['store_credit'];
@@ -316,13 +326,16 @@ function jrwdev_manage_imported_data( $user, $item, $options, $raw_headers ) {
         create_store_credit_coupon( $user['email'], $store_credit ); 
     }
 
+    write_log('user $user jrwdev_manage_imported_data');
+    write_log($user);  
+
     return $user;
 }
 
 // Parse addresses in CSV (delimiter => "|") and RETURN values as associate array
-function add_imported_csv_addresses( $user, $raw_addresses ) {
+// REQUIRES WooCommerce extension Multiple Shipping Addresses
+function parse_imported_csv_addresses( $user, $raw_addresses ) {
     $other_shipping_addresses = array();
-
     $addresses = explode('|', $raw_addresses);
 
     foreach ($addresses as $i => $address) {
@@ -336,10 +349,8 @@ function add_imported_csv_addresses( $user, $raw_addresses ) {
             $value = trim($raw_value);
 
             // Remove unnecessary "address_" prefix
-            if( strpos( $field, 'address_' ) !== false ) {
-                if( 'address_id' != $field ) {
-                    $field = str_replace( 'address_', '', $field );
-                }
+            if( strpos( $field, 'address_' ) !== false && 'address_id' != $field ) {
+                $field = str_replace( 'address_', '', $field );
             }
 
             // Translate field names to WC API
@@ -366,22 +377,21 @@ function add_imported_csv_addresses( $user, $raw_addresses ) {
 
             }
 
-            // Translate value names to WC API
-            switch($value) {
-
-                case 'United States':
-                    $value = 'US';
-                    break;
+            if($value === 'United States') {
+                $value = 'US';
             }
-
 
             // If first address in list, set as both billing and shipping
             if($i === 0) {
+                // Hack: the standard address country field seems to prefer abbv. country name
                 $user['billing_address'][$field] = $value;
                 $user['shipping_address'][$field] = $value;
             } else {
                 // Add additional addresses to meta data per WC api
                 $adjusted_i = $i - 1;
+
+                // The Multiple Shipping Addresses extension requires adding "shipping_" prefix
+                $field = 'shipping_' . $field;
                 $other_shipping_addresses[$adjusted_i][$field] = $value;
             } 
 
@@ -389,9 +399,6 @@ function add_imported_csv_addresses( $user, $raw_addresses ) {
     }
 
     $user['user_meta']['wc_other_addresses'] = $other_shipping_addresses;
-
-    write_log("Checking $user after add_imported_csv_addresses function");
-    write_log($user);
     
     return $user;
 }
@@ -430,23 +437,26 @@ function create_store_credit_coupon( $email, $amount ) {
 // **** TOOLS AND TESTS
 // 
 
-// add_action( 'init', 'jrwdev_user_data_testing' );
-// function jrwdev_user_data_testing() {
-//     $args = array(
-//         'role' => 'customer'
-//     );
-//     $all_customers = get_users( $args );
+add_action( 'init', 'jrwdev_user_data_testing' );
+function jrwdev_user_data_testing() {
+    // write_log('$_POST data at init');
+    // write_log($_POST);
 
-//     foreach ($all_customers as $index => $customer) {
-//         $customer_user_data = get_userdata($customer->ID);
-//         write_log('user data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
-//         write_log($customer_user_data);   
+    // $args = array(
+    //     'role' => 'customer'
+    // );
+    // $all_customers = get_users( $args );
 
-//         $customer_user_meta = get_user_meta($customer->ID);
-//         write_log('user meta data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
-//         write_log($customer_user_meta);
-//     }
-// }
+    // foreach ($all_customers as $index => $customer) {
+    //     $customer_user_data = get_userdata($customer->ID);
+    //     write_log('user data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
+    //     write_log($customer_user_data);   
+
+    //     $customer_user_meta = get_user_meta($customer->ID);
+    //     write_log('user meta data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
+    //     write_log($customer_user_meta);
+    // }
+}
 
 
 // ** Short cut link to csv import field mapping 
