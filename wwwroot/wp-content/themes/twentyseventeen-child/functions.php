@@ -111,7 +111,7 @@ function jrwdev_add_additional_customer_fields( $user_id ) {
     }  
 }
 
-// Helper: ensures user has the latest customer_id
+// Ensures user has the latest customer_id
 // Seems inefficient
 function add_incremented_customer_id( $user ) {
     // Try to find the latest customer
@@ -446,26 +446,26 @@ function create_store_credit_coupon( $email, $amount ) {
 // **** TOOLS AND TESTS
 // 
 
-add_action( 'init', 'jrwdev_user_data_testing' );
-function jrwdev_user_data_testing() {
-    // write_log('$_POST data at init');
-    // write_log($_POST);
+// add_action( 'init', 'jrwdev_user_data_testing' );
+// function jrwdev_user_data_testing() {
+//     // write_log('$_POST data at init');
+//     // write_log($_POST);
 
-    $args = array(
-        'role' => 'customer'
-    );
-    $all_customers = get_users( $args );
+//     $args = array(
+//         'role' => 'customer'
+//     );
+//     $all_customers = get_users( $args );
 
-    foreach ($all_customers as $index => $customer) {
-        $customer_user_data = get_userdata($customer->ID);
-        write_log('user data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
-        write_log($customer_user_data);   
+//     foreach ($all_customers as $index => $customer) {
+//         $customer_user_data = get_userdata($customer->ID);
+//         write_log('user data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
+//         write_log($customer_user_data);   
 
-        $customer_user_meta = get_user_meta($customer->ID);
-        write_log('user meta data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
-        write_log($customer_user_meta);
-    }
-}
+//         $customer_user_meta = get_user_meta($customer->ID);
+//         write_log('user meta data for customer ' . $customer->ID . ' from jrwdev_show_user_meta');
+//         write_log($customer_user_meta);
+//     }
+// }
 
 
 // ** Short cut link to csv import field mapping 
